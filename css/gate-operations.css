@@ -1033,3 +1033,8 @@
   }
 }
 
+/* Larger readable Gate Operations typography */
+.gate-hero-proof,.gate-visual-label{font-size:12px}
+.gate-capability-chapter>header span,.gate-capability-chapter>header p,.gate-capability-list small,.gate-capability-list em,.gate-capability-demo span,.gate-capability-demo i{font-size:12px}
+.gate-capability-list b,.gate-capability-demo b{font-size:16px}
+
