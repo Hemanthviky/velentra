@@ -1,0 +1,1035 @@
+﻿/* Gate Operations page */
+.gate-page .inner-hero{
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0 82px;
+  color: #071d55;
+  background:
+    radial-gradient(circle at 82% 45%, rgba(20, 100, 235, .13), transparent 32%),
+    linear-gradient(120deg, #fff 0%, #f4f8ff 58%, #edf5ff 100%)
+}
+.gate-page .inner-hero:before{
+  content: "";
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  right: -180px;
+  top: -260px;
+  border: 1px solid rgba(39, 107, 226, .1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 100px rgba(91, 148, 255, .025), 0 0 0 200px rgba(91, 148, 255, .018)
+}
+.gate-page .inner-hero-grid{
+  position: relative;
+  z-index: 1;
+  grid-template-columns: .84fr 1.16fr;
+  gap: 70px
+}
+.gate-hero-copy{
+  position: relative;
+  z-index: 2
+}
+.gate-page .inner-hero .eyebrow.light{
+  color: #0962ed
+}
+.gate-page .inner-hero h1{
+  color: #071d55;
+  font-size: clamp(54px, 5.5vw, 76px);
+  line-height: 1.01;
+  letter-spacing: -.06em;
+  margin-bottom: 24px
+}
+.gate-page .inner-hero h1 em{
+  color: #0962ed;
+  font-style: normal
+}
+.gate-page .inner-hero p{
+  color: #64738d;
+  line-height: 1.75;
+  max-width: 560px
+}
+.gate-page .button-ghost{
+  color: #0962ed;
+  border-color: #b7cff5;
+  background: #fff
+}
+.gate-hero-proof{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 34px;
+  color: #627693;
+  font-size: 10px;
+  font-weight: 600
+}
+.gate-hero-proof span{
+  display: flex;
+  align-items: center;
+  gap: 7px
+}
+.gate-hero-proof i, .gate-visual-label i{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #50dda0;
+  box-shadow: 0 0 0 4px rgba(80, 221, 160, .12)
+}
+.gate-page .gate-hero-visual{
+  height: 500px;
+  min-width: 0;
+  border: 1px solid #d6e5f8;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 25px 70px rgba(27, 73, 139, .12)
+}
+.gate-visual-label{
+  position: absolute;
+  z-index: 4;
+  top: 24px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #58708f;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em
+}
+.gate-visual-label span{
+  margin-left: auto;
+  padding: 5px 8px;
+  border: 1px solid rgba(83, 221, 160, .2);
+  border-radius: 20px;
+  color: #66e2aa;
+  background: rgba(51, 185, 129, .08)
+}
+.gate-page .inner-visual .dashboard-stage{
+  left: 46px;
+  right: 46px;
+  bottom: 42px;
+  height: 375px
+}
+.gate-page .inner-visual .dash-window{
+  border-color: #cbdcf2;
+  border-radius: 16px;
+  transform: perspective(1100px) rotateY(-5deg) rotateX(2deg);
+  box-shadow: -25px 30px 70px rgba(36, 79, 139, .2)
+}
+.gate-page .inner-visual .dash-window,
+.gate-page .inner-visual .dash-top{
+  background: #fff
+}
+.gate-page .inner-visual .dash-top{
+  color: #58708f;
+  border-bottom: 1px solid #e2eaf5
+}
+.gate-page .inner-visual .dash-body{
+  background: #f5f9ff
+}
+.gate-page .inner-visual .dash-stat,
+.gate-page .inner-visual .dash-chart,
+.gate-page .inner-visual .dash-row{
+  color: #071d55;
+  background: #fff;
+  border-color: #dbe7f5
+}
+.gate-page .inner-visual .dash-stat span{
+  color: #6a7d98
+}
+.gate-page .inner-visual .dash-row{
+  color: #28466f
+}
+.gate-page .inner-visual .dash-row span{
+  color: #11885a
+}
+.gate-page .dash-top em{
+  margin-left: auto;
+  color: #6f89ae;
+  font-size: 7px;
+  font-style: normal
+}
+.gate-page .dash-chart{
+  position: relative;
+  padding-top: 30px
+}
+.gate-page .dash-chart b{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  color: #58708f;
+  font-size: 7px
+}
+.gate-page .dash-row{
+  align-items: center;
+  gap: 8px
+}
+.gate-page .dash-row i{
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  color: #9ec2ff;
+  background: #17437e;
+  font-size: 6px;
+  font-style: normal
+}
+.gate-page .dash-row b{
+  margin-right: auto
+}
+.gate-float-card{
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px;
+  border: 1px solid #d5e3f5;
+  border-radius: 11px;
+  color: #071d55;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 16px 35px rgba(25, 69, 130, .15);
+  backdrop-filter: blur(12px)
+}
+.gate-float-card b{
+  font: 800 16px "Manrope"
+}
+.gate-float-card span{
+  display: flex;
+  flex-direction: column;
+  color: #71829a;
+  font-size: 7px
+}
+.gate-float-card span b{
+  color: #071d55;
+  font-size: 8px
+}
+.gate-float-card small{
+  color: #69dda7;
+  font-size: 6px
+}
+.gate-float-card>i{
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #63dfa6;
+  background: rgba(66, 211, 147, .12);
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 800
+}
+.gate-float-left{
+  left: 16px;
+  bottom: 24px
+}
+.gate-float-right{
+  right: 14px;
+  top: 58px
+}
+.gate-page .subnav{
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(19, 54, 104, .05)
+}
+.gate-outcomes i{
+  margin-bottom: 17px;
+  color: #0a62eb;
+  font: 800 10px "Manrope";
+  font-style: normal
+}
+.gate-page .gate-command-section{
+  position: relative;
+  color: #071d55;
+  background:
+    radial-gradient(circle at 85% 30%, rgba(18, 92, 217, .1), transparent 30%),
+    #f1f7ff
+}
+.gate-page .gate-command-section .split-copy h2{
+  color: #071d55
+}
+.gate-page .gate-command-section .split-copy>p, .gate-page .gate-benefit-list small{
+  color: #64738d
+}
+.gate-page .gate-benefit-list>div{
+  border-color: #d7e5f7
+}
+.gate-page .gate-console{
+  transform: perspective(1000px) rotateY(-3deg);
+  border-color: #d3e2f5;
+  background: #fff;
+  box-shadow: 30px 40px 80px rgba(27, 73, 139, .14)
+}
+.gate-page .console-top b{
+  color: #071d55
+}
+.gate-page .console-stats>div,
+.gate-page .entry-list,
+.gate-page .gate-load span{
+  border-color: #dbe7f5;
+  background: #f5f9ff
+}
+.gate-page .console-stats span,
+.gate-page .entry-list small,
+.gate-page .gate-load span{
+  color: #6a7d98
+}
+.gate-page .console-stats b,
+.gate-page .entry-list b{
+  color: #071d55
+}
+.gate-page .entry-list>div{
+  border-color: #dbe7f5
+}
+.gate-page .entry-list em{
+  color: #11885a;
+  background: #e2f7ed
+}
+.gate-load{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px
+}
+.gate-load span{
+  position: relative;
+  height: 44px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #204a7e;
+  border-radius: 9px;
+  color: #9db1cc;
+  background: #102e59;
+  font-size: 7px
+}
+.gate-load b{
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  height: 3px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #1769e8, #61a0ff)
+}
+.gate-page .feature-card{
+  overflow: hidden
+}
+.gate-page .feature-card:after{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: -35px;
+  bottom: -35px;
+  border-radius: 50%;
+  background: rgba(19, 93, 233, .035)
+}
+.gate-page .feature-card:hover{
+  border-color: #aac8f2;
+  box-shadow: 0 18px 45px rgba(21, 70, 138, .12)
+}
+.gate-page .feature-card.accent-card:after{
+  background: rgba(255, 255, 255, .08)
+}
+.gate-page .feature-card.accent-card a{
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700
+}
+.gate-steps{
+  position: relative
+}
+.gate-steps:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  border-top: 1px dashed #b6ccec
+}
+.gate-page .gate-steps .step-card{
+  position: relative;
+  z-index: 1;
+  min-height: 230px;
+  background: #fff
+}
+.gate-steps .step-card>span{
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  color: #edf3fb;
+  font: 800 48px/1 "Manrope"
+}
+.gate-page .page-cta{
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, #075ce8, #003499)
+}
+.gate-page .page-cta:after{
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: 10%;
+  top: -260px;
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 50%;
+  box-shadow: 0 0 0 65px rgba(255, 255, 255, .025), 0 0 0 130px rgba(255, 255, 255, .02)
+}
+.gate-page .page-cta .container{
+  position: relative;
+  z-index: 1
+}
+.gate-page .page-cta div>span{
+  display: block;
+  margin-bottom: 10px;
+  color: #a9c8ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase
+}
+
+@media(max-width:980px){
+  .gate-page .inner-hero-grid{
+    gap: 45px
+  }
+  .gate-page .gate-hero-visual{
+    width: min(680px, 100%);
+    margin: 0 auto
+  }
+}
+
+@media(max-width:640px){
+  .gate-page .inner-hero{
+    padding: 55px 0 45px
+  }
+  .gate-page .inner-hero h1{
+    font-size: 46px
+  }
+  .gate-page .gate-hero-visual{
+    height: 350px;
+    border-radius: 20px
+  }
+  .gate-page .inner-visual .dashboard-stage{
+    left: 18px;
+    right: 18px;
+    bottom: 28px;
+    height: 260px
+  }
+  .gate-page .dash-body{
+    padding: 9px;
+    gap: 6px
+  }
+  .gate-page .dash-chart{
+    height: 62px
+  }
+  .gate-page .dash-row{
+    padding: 8px
+  }
+  .gate-page .dash-row:nth-last-child(-n+2){
+    display: none
+  }
+  .gate-float-card{
+    display: none
+  }
+  .gate-visual-label{
+    top: 16px;
+    left: 18px;
+    right: 18px
+  }
+  .gate-hero-proof{
+    gap: 12px
+  }
+  .gate-load{
+    grid-template-columns: 1fr
+  }
+  .gate-load span:nth-child(n+2){
+    display: none
+  }
+  .gate-steps:before{
+    display: none
+  }
+  .gate-page .gate-steps .step-card{
+    min-height: 190px
+  }
+}
+
+/* Refined Gate Operations mobile */
+@media(max-width:640px){
+  .gate-page .inner-hero{
+    padding: 52px 0 38px
+  }
+  .gate-page .inner-hero h1{
+    font-size: clamp(40px, 12vw, 50px)
+  }
+  .gate-hero-proof{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 26px
+  }
+  .gate-hero-proof span:last-child{
+    grid-column: span 2
+  }
+  .gate-page .gate-hero-visual{
+    height: 330px;
+    border-radius: 22px
+  }
+  .gate-page .inner-visual .dashboard-stage{
+    left: 12px;
+    right: 12px;
+    bottom: 18px;
+    height: 260px
+  }
+  .gate-page .inner-visual .dash-window{
+    transform: none;
+    border-radius: 12px
+  }
+  .gate-page .dash-top{
+    height: 34px;
+    padding: 0 10px
+  }
+  .gate-page .dash-top em{
+    display: none
+  }
+  .gate-page .dash-stat{
+    padding: 10px
+  }
+  .gate-page .dash-stat strong{
+    font-size: 21px
+  }
+  .gate-page .dash-chart{
+    height: 58px;
+    gap: 5px
+  }
+  .gate-page .dash-chart span{
+    width: 12px
+  }
+  .gate-visual-label{
+    font-size: 8px
+  }
+  .gate-page .gate-console{
+    padding: 12px;
+    border-radius: 16px;
+    transform: none
+  }
+  .gate-page .console-stats{
+    gap: 8px
+  }
+  .gate-page .console-stats>div{
+    padding: 14px
+  }
+  .gate-page .console-stats b{
+    font-size: 22px
+  }
+  .gate-page .entry-list>div{
+    padding: 10px 7px
+  }
+  .gate-page .entry-list em{
+    font-size: 7px
+  }
+  .gate-page .gate-steps .step-card{
+    min-height: 0
+  }
+}
+
+@media(max-width:390px){
+  .gate-hero-proof{
+    grid-template-columns: 1fr
+  }
+  .gate-hero-proof span:last-child{
+    grid-column: auto
+  }
+  .gate-page .console-stats{
+    grid-template-columns: 1fr
+  }
+}
+
+@media(max-width:480px){
+  .gate-page .inner-hero h1{
+    font-size: clamp(36px, 12vw, 44px)
+  }
+  .gate-hero-proof{
+    grid-template-columns: 1fr
+  }
+  .gate-hero-proof span:last-child{
+    grid-column: auto
+  }
+  .gate-page .gate-hero-visual{
+    height: 315px
+  }
+  .gate-page .dash-stat strong{
+    font-size: 18px
+  }
+  .gate-page .dash-stat small{
+    font-size: 5px
+  }
+  .gate-page .dash-row{
+    font-size: 6px
+  }
+  .gate-page .console-stats{
+    grid-template-columns: 1fr
+  }
+  .gate-page .entry-list em{
+    display: none
+  }
+}
+
+/* Editorial Gate Operations capability index */
+.gate-page #features .section-heading{
+  max-width: 760px
+}
+.gate-capability-index{
+  border-top: 1px solid #cad9ec
+}
+.gate-capability-chapter{
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 70px;
+  padding: 62px 0;
+  border-bottom: 1px solid #cad9ec
+}
+.gate-capability-chapter>header{
+  position: sticky;
+  top: 155px;
+  align-self: start
+}
+.gate-capability-chapter>header i{
+  display: block;
+  margin-bottom: 42px;
+  color: #a8b9cf;
+  font: 800 12px "Manrope";
+  font-style: normal
+}
+.gate-capability-chapter>header span{
+  color: #0962ed;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase
+}
+.gate-capability-chapter>header h3{
+  margin: 12px 0 13px;
+  color: #071d55;
+  font-size: 29px;
+  letter-spacing: -.045em
+}
+.gate-capability-chapter>header p{
+  max-width: 360px;
+  color: #6a7d96;
+  font-size: 12px;
+  line-height: 1.75
+}
+.gate-capability-list{
+  border-top: 1px solid #d9e4f1
+}
+.gate-capability-list a{
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 22px 4px;
+  border-bottom: 1px solid #d9e4f1;
+  transition: padding .2s ease, background .2s ease
+}
+.gate-capability-list a:hover{
+  padding-left: 14px;
+  padding-right: 14px;
+  background: rgba(255, 255, 255, .72)
+}
+.gate-capability-list a>i{
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #0962ed;
+  background: #e7f0ff;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 800
+}
+.gate-capability-list a:nth-child(3n+2)>i{
+  color: #d96b19;
+  background: #fff0e3
+}
+.gate-capability-list a:nth-child(3n)>i{
+  color: #138555;
+  background: #e0f6ea
+}
+.gate-capability-list span{
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+.gate-capability-list b{
+  color: #071d55;
+  font: 700 14px "Manrope"
+}
+.gate-capability-list small{
+  color: #718299;
+  font-size: 10px
+}
+.gate-capability-list em{
+  color: #8999ae;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase
+}
+.gate-capability-demo{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 38px;
+  padding: 28px 0;
+  border-top: 1px solid #cad9ec;
+  border-bottom: 1px solid #cad9ec
+}
+.gate-capability-demo span{
+  color: #73849a;
+  font-size: 10px
+}
+.gate-capability-demo b{
+  color: #071d55;
+  font: 700 17px "Manrope"
+}
+.gate-capability-demo i{
+  margin-left: auto;
+  color: #0962ed;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700
+}
+
+@media(max-width:760px){
+  .gate-capability-chapter{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 42px 0
+  }
+  .gate-capability-chapter>header{
+    position: static
+  }
+  .gate-capability-chapter>header i{
+    margin-bottom: 22px
+  }
+  .gate-capability-chapter>header h3{
+    font-size: 25px
+  }
+  .gate-capability-list a{
+    grid-template-columns: 38px 1fr;
+    gap: 13px;
+    padding: 17px 0
+  }
+  .gate-capability-list a>i{
+    width: 38px;
+    height: 38px
+  }
+  .gate-capability-list em{
+    display: none
+  }
+  .gate-capability-list small{
+    font-size: 9px;
+    line-height: 1.5
+  }
+  .gate-capability-demo{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 0
+  }
+  .gate-capability-demo i{
+    margin: 8px 0 0
+  }
+}
+
+/* Final Gate Operations mobile layout */
+@media(max-width:640px){
+  .gate-page .inner-hero{
+    padding: 42px 0 32px
+  }
+  .gate-page .inner-hero-grid{
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px
+  }
+  .gate-hero-copy{
+    width: 100%;
+    min-width: 0;
+    text-align: left
+  }
+  .gate-page .inner-hero .eyebrow{
+    justify-content: flex-start
+  }
+  .gate-page .inner-hero h1{
+    max-width: 340px;
+    margin-bottom: 17px;
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1.02
+  }
+  .gate-page .inner-hero p{
+    max-width: 440px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65
+  }
+  .gate-page .hero-actions{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 23px
+  }
+  .gate-page .hero-actions .button{
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 12px 10px;
+    font-size: 11px
+  }
+  .gate-hero-proof{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 20px
+  }
+  .gate-hero-proof span{
+    padding: 7px 9px;
+    border: 1px solid #d9e6f6;
+    border-radius: 20px;
+    background: rgba(255,255,255,.7);
+    font-size: 7px
+  }
+  .gate-page .inner-visual.gate-hero-visual{
+    width: 100%;
+    min-height: 0;
+    height: 275px;
+    overflow: hidden;
+    border-radius: 17px
+  }
+  .gate-visual-label{
+    top: 13px;
+    left: 14px;
+    right: 14px;
+    font-size: 7px
+  }
+  .gate-page .inner-visual .dashboard-stage{
+    left: 9px;
+    right: 9px;
+    bottom: 10px;
+    height: 220px
+  }
+  .gate-page .inner-visual .dash-window{
+    height: 100%;
+    overflow: hidden
+  }
+  .gate-page .dash-body{
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+    gap: 5px
+  }
+  .gate-page .dash-stat{
+    padding: 8px
+  }
+  .gate-page .dash-stat span{
+    font-size: 6px
+  }
+  .gate-page .dash-stat strong{
+    margin: 2px 0;
+    font-size: 18px
+  }
+  .gate-page .dash-stat small{
+    font-size: 5px
+  }
+  .gate-page .dash-chart{
+    height: 54px;
+    padding: 22px 8px 7px
+  }
+  .gate-page .dash-chart b{
+    top: 7px;
+    left: 8px
+  }
+  .gate-page .dash-row{
+    min-width: 0;
+    padding: 7px;
+    font-size: 6px
+  }
+  .gate-page .dash-row i{
+    width: 18px;
+    height: 18px
+  }
+  .gate-page .subnav .container{
+    height: 50px
+  }
+  .gate-page .subnav a{
+    padding: 8px 11px;
+    font-size: 9px
+  }
+  .gate-page #overview .section-heading{
+    text-align: left
+  }
+  .gate-page #overview .section-heading .eyebrow{
+    justify-content: flex-start
+  }
+  .gate-page .gate-outcomes{
+    grid-template-columns: 1fr 1fr;
+    gap: 8px
+  }
+  .gate-page .gate-outcomes div{
+    min-height: 145px;
+    padding: 16px
+  }
+  .gate-page .gate-outcomes i{
+    margin-bottom: 13px
+  }
+  .gate-page .gate-outcomes b{
+    font-size: 13px
+  }
+  .gate-page .gate-outcomes span{
+    font-size: 9px
+  }
+  .gate-page .gate-command-section .split-grid{
+    gap: 28px
+  }
+  .gate-page .gate-benefit-list{
+    margin-bottom: 0
+  }
+  .gate-page .gate-benefit-list>div{
+    gap: 12px;
+    padding: 14px 0
+  }
+  .gate-page .gate-console{
+    padding: 10px;
+    border-radius: 14px
+  }
+  .gate-page .console-stats{
+    grid-template-columns: 1fr 1fr;
+    gap: 6px
+  }
+  .gate-page .console-stats>div{
+    padding: 11px
+  }
+  .gate-page .console-stats b{
+    font-size: 19px
+  }
+  .gate-page .gate-load{
+    display: none
+  }
+  .gate-page .entry-list{
+    padding: 5px
+  }
+  .gate-page .entry-list>div{
+    padding: 9px 6px
+  }
+  .gate-page .entry-list>div:last-child{
+    display: none
+  }
+  .gate-capability-chapter{
+    gap: 18px;
+    padding: 35px 0
+  }
+  .gate-capability-chapter>header i{
+    margin-bottom: 14px
+  }
+  .gate-capability-chapter>header h3{
+    margin: 8px 0;
+    font-size: 23px
+  }
+  .gate-capability-chapter>header p{
+    margin-bottom: 0;
+    font-size: 11px
+  }
+  .gate-capability-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    border: 0
+  }
+  .gate-capability-list a{
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px;
+    border: 1px solid #d9e4f1;
+    border-radius: 12px;
+    background: rgba(255,255,255,.75)
+  }
+  .gate-capability-list a>i{
+    width: 34px;
+    height: 34px
+  }
+  .gate-capability-list b{
+    font-size: 11px;
+    line-height: 1.25
+  }
+  .gate-capability-list small{
+    display: none
+  }
+  .gate-capability-demo{
+    gap: 6px;
+    margin-top: 25px;
+    padding: 20px 0
+  }
+  .gate-capability-demo b{
+    font-size: 14px
+  }
+  .gate-page .gate-steps{
+    gap: 10px
+  }
+  .gate-page .gate-steps .step-card{
+    padding: 21px;
+  }
+  .gate-page .gate-steps .step-card>span{
+    font-size: 38px
+  }
+  .gate-page .page-cta{
+    padding: 46px 0
+  }
+  .gate-page .page-cta .container{
+    align-items: stretch
+  }
+}
+
+@media(max-width:400px){
+  .gate-page .gate-hero-proof{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+  .gate-page .gate-hero-proof span{
+    justify-content: center
+  }
+  .gate-page .gate-hero-proof span:last-child{
+    grid-column: span 2
+  }
+  .gate-page .inner-visual.gate-hero-visual{
+    height: 260px
+  }
+  .gate-page .inner-visual .dashboard-stage{
+    height: 207px
+  }
+  .gate-page .dash-row:nth-last-child(-n+2){
+    display: none
+  }
+  .gate-page .gate-outcomes{
+    grid-template-columns: 1fr 1fr
+  }
+  .gate-page .gate-outcomes div{
+    min-height: 135px;
+    padding: 14px
+  }
+  .gate-page .console-stats{
+    grid-template-columns: 1fr 1fr
+  }
+  .gate-capability-list{
+    grid-template-columns: 1fr 1fr
+  }
+  .gate-capability-list a{
+    padding: 12px
+  }
+}
+
