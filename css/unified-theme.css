@@ -77,8 +77,8 @@ body.product-v3 .eyebrow span {
   background: var(--theme-primary);
 }
 
-body.product-v3 .people-label {
-  background: rgba(99, 88, 232, 0.12);
+body.product-v3 .people-label span {
+  background: var(--theme-primary);
 }
 
 body.product-v3 p,
@@ -303,4 +303,86 @@ body.product-v3 .people-closing-cta .people-cta-actions .button:first-child {
 body.product-v3 .people-closing-cta .people-cta-actions .button:last-child {
   color: var(--theme-primary);
   background: rgba(255, 255, 255, 0.82);
+}
+
+/* ── Closing CTA shared layout (gate & smart-id pages) ── */
+body.product-v3 .people-closing-cta {
+  padding: 40px 0;
+}
+
+body.product-v3 .people-closing-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(32px, 5vw, 72px);
+  padding: clamp(32px, 3.5vw, 52px) clamp(28px, 4vw, 56px);
+  border-radius: 24px;
+}
+
+body.product-v3 .people-closing-cta .container > div:first-child > span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--theme-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+body.product-v3 .people-closing-cta h2 {
+  margin: 0 0 12px !important;
+  font-size: clamp(22px, 2.6vw, 36px) !important;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+body.product-v3 .people-closing-cta p {
+  margin: 0;
+  max-width: 540px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+body.product-v3 .people-cta-actions {
+  display: grid;
+  gap: 11px;
+  flex-shrink: 0;
+}
+
+body.product-v3 .people-cta-actions .button {
+  min-width: 220px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.product-v3 .people-cta-actions .button.button-ghost {
+  color: var(--theme-primary) !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid rgba(99, 88, 232, 0.2) !important;
+}
+
+@media (max-width: 860px) {
+  body.product-v3 .people-closing-cta .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  body.product-v3 .people-cta-actions {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  body.product-v3 .people-cta-actions .button {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  body.product-v3 .people-cta-actions {
+    grid-template-columns: 1fr;
+  }
 }

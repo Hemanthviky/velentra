@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --navy: #07162f;
   --navy-2: #0b2147;
   --blue: #135de9;
@@ -1174,7 +1174,7 @@ a{
   color: #d4def0
 }
 .demo-points span:before{
-  content: "âœ“";
+  content: "✓";
   color: #65e2a5;
   margin-right: 10px
 }
