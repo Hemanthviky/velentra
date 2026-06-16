@@ -7,7 +7,7 @@
 .smart-gate-hero:before{content:"";position:absolute;z-index:-1;inset:4% -14% auto 42%;height:75%;border-radius:50%;background:radial-gradient(circle at 55% 45%,rgba(255,116,23,.22),transparent 24%),radial-gradient(circle at 48% 50%,rgba(112,97,232,.28),transparent 54%);filter:blur(35px)}
 .smart-gate-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.9fr);align-items:center;gap:clamp(60px,8vw,145px)}
 .smart-gate-hero-copy{max-width:720px}
-.smart-gate-hero-copy h1{margin:20px 0 13px;color:var(--gate-blue);font-family:"Manrope",sans-serif;font-size:clamp(54px,6vw,92px);font-weight:800;line-height:.99;letter-spacing:-.065em}
+.smart-gate-hero-copy h1{margin:20px 0 13px;color:var(--gate-blue);font-family:"Manrope",sans-serif;font-size:clamp(54px,4vw,92px);font-weight:800;line-height:.99;letter-spacing:-.065em}
 .smart-gate-hero-copy h2{margin:0 0 22px;color:var(--gate-orange);font-size:clamp(21px,2vw,31px);letter-spacing:-.035em}
 .smart-gate-hero-copy p{max-width:660px;margin:0 0 10px;color:var(--gate-muted)}
 .gate-proof{display:flex;gap:22px;margin:28px 0}

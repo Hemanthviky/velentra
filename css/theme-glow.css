@@ -1011,11 +1011,18 @@ body.home-page{
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: #ffffff url("../hero bg.png") center / cover no-repeat;
+  background: #ffffff;
 }
 .platform-hero::before{
-  content: none;
-  display: none;
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: 0;
+  display: block;
+  background: url("../hero bg.png") center / cover no-repeat;
+  filter: blur(1.5px);
+  transform: scale(1.012);
+  transform-origin: center;
 }
 .platform-hero-grid{
   position: relative;
@@ -1342,6 +1349,8 @@ body.home-page{
 @media (max-width: 640px){
   .platform-hero{
     padding: 105px 0 45px;
+  }
+  .platform-hero::before{
     background-position: center top;
   }
   .platform-hero-grid{
