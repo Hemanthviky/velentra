@@ -2121,19 +2121,17 @@ body.home-page{
 }
 .what-section .what-grid{
   position: relative;
-  min-height: 480px;
+  min-height: 720px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, .78fr);
-  gap: 0;
+  grid-template-columns: minmax(0, .9fr) minmax(660px, 1fr);
+  gap: clamp(34px, 5vw, 86px);
   align-items: center;
-  overflow: hidden;
-  padding: 64px 0 64px clamp(32px, 5vw, 58px);
-  border: 1px solid rgba(204, 209, 232, .9);
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at 92% 14%, rgba(135, 117, 255, .14), transparent 34%),
-    rgba(255, 255, 255, .9);
-  box-shadow: 0 28px 80px rgba(36, 43, 92, .12);
+  overflow: visible;
+  padding: 40px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 .what-section .what-copy{
   position: relative;
@@ -2182,12 +2180,12 @@ body.home-page{
 .what-orbit-clip{
   position: relative;
   align-self: stretch;
-  min-height: 480px;
-  overflow: hidden;
+  min-height: 700px;
+  overflow: visible;
 }
 .what-orbit-clip .orbit-system{
   position: absolute;
-  left: 88%;
+  left: 50%;
   top: 50%;
   width: 760px;
   height: 760px;
@@ -2201,130 +2199,183 @@ body.home-page{
   filter: none;
 }
 .what-orbit-clip .orbit-ring{
-  border: 2px dotted rgba(134, 143, 184, .34);
+  border: 2px dotted rgba(99, 88, 232, .26);
 }
 .what-orbit-clip .orbit-ring-one{
   --orbit-radius: 150px;
-  --spin-duration: 26s;
+  --spin-duration: 18s;
   width: 300px;
   height: 300px;
 }
 .what-orbit-clip .orbit-ring-two{
   --orbit-radius: 245px;
-  --spin-duration: 38s;
+  --spin-duration: 26s;
   width: 490px;
   height: 490px;
 }
 .what-orbit-clip .orbit-ring-three{
   --orbit-radius: 340px;
-  --spin-duration: 54s;
+  --spin-duration: 36s;
   width: 680px;
   height: 680px;
 }
 .what-orbit-clip .orbit-center{
-  width: 92px;
-  height: 92px;
-  border: 1px solid rgba(204, 209, 232, .85);
+  width: 142px;
+  height: 142px;
+  border: 1px solid rgba(99, 88, 232, .24);
   border-radius: 50%;
   background: rgba(255, 255, 255, .9);
-  box-shadow: 0 18px 40px rgba(84, 72, 216, .14);
+  box-shadow: 0 22px 48px rgba(99, 88, 232, .18);
 }
 .what-orbit-clip .orbit-center .brand-logo{
-  width: 76px;
-  height: 76px;
+  width: 112px;
+  height: 112px;
   filter: saturate(1.2);
 }
 .what-orbit-clip .orbit-center .brand-logo img{
   mix-blend-mode: normal;
 }
 .what-orbit-clip .orbit-ring .orbit-node{
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   border: 1px solid color-mix(in srgb, var(--orbit-color) 28%, #fff);
   background: var(--orbit-soft);
   box-shadow: 0 14px 30px color-mix(in srgb, var(--orbit-color) 18%, transparent);
 }
 .what-orbit-clip .orbit-ring .orbit-node .orbit-content{
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
 }
 .what-orbit-clip .orbit-ring .orbit-node svg{
-  width: 24px;
-  height: 24px;
+  width: 31px;
+  height: 31px;
   stroke-width: 2;
 }
 .what-orbit-clip .orbit-ring .orbit-node .orbit-content b{
-  bottom: calc(100% + 8px);
-  padding: 4px 8px;
-  border-color: rgba(204, 209, 232, .9);
+  bottom: calc(100% + 10px);
+  padding: 6px 12px;
+  border-color: rgba(99, 88, 232, .22);
   border-radius: 12px;
-  color: #26335f;
+  color: #3f38a8;
   background: rgba(255, 255, 255, .95);
-  box-shadow: 0 10px 24px rgba(47, 58, 118, .1);
-  font-size: 9px;
+  box-shadow: 0 10px 24px rgba(99, 88, 232, .12);
+  font-size: 11px;
 }
 .what-orbit-clip .orbit-blue,
 .what-orbit-clip .orbit-violet,
 .what-orbit-clip .orbit-amber,
 .what-orbit-clip .orbit-indigo,
-.what-orbit-clip .orbit-gold{
-  --orbit-color: #7668f0 !important;
-  --orbit-soft: #f0edff !important;
-}
-.what-orbit-clip .orbit-cyan{
-  --orbit-color: #4f9deb !important;
-  --orbit-soft: #eaf4ff !important;
-}
+.what-orbit-clip .orbit-gold,
+.what-orbit-clip .orbit-cyan,
 .what-orbit-clip .orbit-green,
 .what-orbit-clip .orbit-orange,
 .what-orbit-clip .orbit-rose{
-  --orbit-color: #58bfc6 !important;
-  --orbit-soft: #e8fbfb !important;
+  --orbit-color: #6358e8 !important;
+  --orbit-soft: #f0efff !important;
 }
 @media (max-width: 1050px){
   .what-section .what-grid{
     grid-template-columns: 1fr;
-    min-height: 760px;
-    padding: 52px 28px 0;
+    min-height: 980px;
+    padding: 52px 0 0;
+  }
+  .what-section .what-copy{
+    max-width: 720px;
   }
   .what-orbit-clip{
-    min-height: 380px;
-    margin: 20px -28px 0;
+    min-height: 720px;
+    margin: 18px 0 0;
   }
   .what-orbit-clip .orbit-system{
-    left: 68%;
-    width: 620px;
-    height: 620px;
-    transform: translate(-50%, -50%) scale(.84);
+    left: 50%;
+    width: min(760px, 100%);
+    height: 760px;
+    transform: translate(-50%, -50%);
   }
 }
 @media (max-width: 640px){
   .what-section{
-    padding: 62px 0;
+    padding: 56px 0;
   }
   .what-section .what-grid{
-    min-height: 650px;
-    padding: 34px 20px 0;
-    border-radius: 22px;
+    min-height: 760px;
+    padding: 30px 0 20px;
+    border-radius: 0;
+  }
+  .what-section .what-copy{
+    max-width: none;
   }
   .what-section .home-heading h2{
-    font-size: clamp(34px, 12vw, 48px);
+    max-width: 11ch;
+    font-size: clamp(33px, 11vw, 44px);
   }
   .what-section .home-heading p{
+    max-width: 34ch;
     font-size: 14px;
+    line-height: 1.65;
   }
   .what-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-top: 24px;
+  }
+  .what-actions .button{
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 10px;
+    white-space: nowrap;
   }
   .what-orbit-clip{
-    min-height: 310px;
-    margin: 18px -20px 0;
+    min-height: 430px;
+    margin: 18px -18px -8px;
   }
   .what-orbit-clip .orbit-system{
-    left: 72%;
-    width: 530px;
-    height: 530px;
-    transform: translate(-50%, -50%) scale(.66);
+    left: 50%;
+    top: 50%;
+    width: 660px;
+    height: 660px;
+    transform: translate(-50%, -50%) scale(.64);
+  }
+  .what-orbit-clip .orbit-ring-one{
+    --orbit-radius: 130px;
+    width: 260px;
+    height: 260px;
+  }
+  .what-orbit-clip .orbit-ring-two{
+    --orbit-radius: 215px;
+    width: 430px;
+    height: 430px;
+  }
+  .what-orbit-clip .orbit-ring-three{
+    --orbit-radius: 300px;
+    width: 600px;
+    height: 600px;
+  }
+  .what-orbit-clip .orbit-center{
+    width: 124px;
+    height: 124px;
+  }
+  .what-orbit-clip .orbit-center .brand-logo{
+    width: 98px;
+    height: 98px;
+  }
+  .what-orbit-clip .orbit-ring .orbit-node{
+    width: 58px;
+    height: 58px;
+  }
+  .what-orbit-clip .orbit-ring .orbit-node .orbit-content{
+    width: 58px;
+    height: 58px;
+  }
+  .what-orbit-clip .orbit-ring .orbit-node svg{
+    width: 28px;
+    height: 28px;
+  }
+  .what-orbit-clip .orbit-ring .orbit-node .orbit-content b{
+    bottom: calc(100% + 8px);
+    padding: 5px 10px;
+    font-size: 10px;
   }
 }
 
