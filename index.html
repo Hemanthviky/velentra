@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Velentra is one platform for smart workforce, gate, and people management.">
-  <title>Velentra | Business Management Platform</title>
+  <meta name="description" content="Velantra is one platform for smart workforce, gate, and people management.">
+  <title>Velantra | Business Management Platform</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/theme-glow.css">
+  <link rel="stylesheet" href="css/site-shell.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body class="home-page">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
   <header class="site-header home-header">
-    <a class="brand brand-lockup" href="index.html" aria-label="Velentra home">
+    <a class="brand brand-lockup" href="index.html" aria-label="Velantra home">
       <span class="brand-logo"><img src="Velentra-logo.png" alt=""></span>
-      <span><strong>VELENTRA</strong><small>Empowering Innovation</small></span>
+      <span><strong>VELANTRA<sup>TM</sup></strong><small>BUSINESS MANAGEMENT PLATFORM</small></span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
@@ -23,37 +27,87 @@
       <a href="smart-id.html">Smart-ID</a>
       <a href="gate-operations.html">Smart-Gate</a>
       <a href="smart-people.html">Smart-People</a>
-      <a class="button button-small button-primary" href="#contact">Contact</a>
+      <a class="button button-small button-primary" href="index.html#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="platform-hero">
-      <div class="hero-grid-lines" aria-hidden="true"></div>
       <div class="container platform-hero-grid">
         <div class="platform-copy reveal">
           <span class="platform-badge"><i></i> Powered By INDSYS</span>
-          <h1>One Platform for Smart <em>Workforce, Gate</em> &amp; People Management</h1>
-          <p>Velentra helps organizations manage employee identity, attendance, visitor entry, gate operations, HR workflows, approvals, reports, and business processes from one modern digital platform.</p>
+          <h1><span><em>One</em> Platform.</span><span><em>One</em> Ecosystem.</span><span><em>On</em> Your Hands.</span></h1>
+          <p>Velantra connect people, processes, and technology — creating smarter workplaces, empowering teams, and delivering real business transformation.</p>
           <div class="platform-actions">
             <a class="button button-primary" href="#products">Explore Products <b>→</b></a>
             <a class="button button-secondary" href="#contact">Book a Demo</a>
           </div>
-          <div class="trust-points"><span><i>✓</i> Secure</span><span><i>✓</i> Smart</span><span><i>✓</i> Scalable</span></div>
         </div>
-        <div class="saas-scene reveal delay-1" aria-label="Velentra platform product preview">
-          <div class="scene-glow"></div>
-          <div class="scene-dashboard tilt-card">
-            <div class="scene-window-top"><span><i></i><i></i><i></i></span><b>Velentra Platform Overview</b><em>All products live</em></div>
-            <div class="scene-product-tabs"><span><i>ID</i> Smart-ID</span><span><i>SG</i> Smart-Gate</span><span><i>SP</i> Smart-People</span></div>
-            <div class="scene-kpis"><div><small>Smart-ID · Employees</small><b>1,248</b><em>98.7% attendance</em></div><div><small>Smart-Gate · Visitors</small><b>126</b><em>12 awaiting entry</em></div><div><small>Smart-People · HR actions</small><b>08</b><em class="orange">Review</em></div></div>
-            <div class="scene-main"><div class="scene-chart"><small>Connected operations activity</small><span style="height:38%"></span><span style="height:52%"></span><span style="height:47%"></span><span style="height:70%"></span><span style="height:62%"></span><span style="height:86%"></span><span style="height:76%"></span></div><div class="scene-feed"><small>Live product updates</small><span><i>ID</i><b>Attendance synced</b></span><span><i>SG</i><b>Visitor approved</b></span><span><i>SP</i><b>Payroll ready</b></span></div></div>
+        <div class="hero-showcase reveal delay-1" aria-label="Velantra app overview">
+          <svg class="showcase-symbols" aria-hidden="true">
+            <symbol id="ic-hr" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><circle cx="17.5" cy="8" r="2.3"/><path d="M16 13.2c2.6.3 4.8 2.1 5 4.8"/></symbol>
+            <symbol id="ic-payroll" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7M3 12h18"/><path d="M10 15h4.2a1.5 1.5 0 0 0 0-3H10m0 0v6"/></symbol>
+            <symbol id="ic-gate" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4M6.5 18V8.5M14.5 18V8.5M6.5 13h8"/></symbol>
+            <symbol id="ic-visitor" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="3"/><circle cx="12" cy="10" r="2.4"/><path d="M8.5 16c.7-2 2-3 3.5-3s2.8 1 3.5 3M9 6h6"/></symbol>
+            <symbol id="ic-leave" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m8.5 14.5 2 2 4-4.2"/></symbol>
+            <symbol id="ic-asset" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5Z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+            <symbol id="ic-vehicle" viewBox="0 0 24 24"><path d="M5 16h14l-1.5-5.5A2 2 0 0 0 15.6 9H8.4a2 2 0 0 0-1.9 1.5L5 16Z"/><path d="M7 16v2M17 16v2M7.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM16.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9 6h6"/></symbol>
+            <symbol id="ic-dashboard" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="4" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="10" width="7" height="10" rx="1.5"/></symbol>
+            <symbol id="ic-home" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7"/><path d="M5 10v9h14v-9"/></symbol>
+            <symbol id="ic-analytics" viewBox="0 0 24 24"><path d="M4 19V10M10 19V5M16 19v-7M22 19v-3"/></symbol>
+            <symbol id="ic-inbox" viewBox="0 0 24 24"><path d="M3 7h18l-2 6H5L3 7Z"/><path d="M5 13v6h14v-6"/></symbol>
+            <symbol id="ic-profile" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M4.5 20.5c0-3.6 3.4-5.5 7.5-5.5s7.5 1.9 7.5 5.5"/></symbol>
+            <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+            <symbol id="ic-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 4 1.5 5 1.5 6H4.5C4.5 14 6 13 6 9Z"/><path d="M10 19a2 2 0 0 0 4 0"/></symbol>
+          </svg>
+          <div class="showcase-glow"></div>
+          <svg class="showcase-orbit" viewBox="0 0 600 600" aria-hidden="true">
+            <circle cx="300" cy="300" r="276"/>
+            <circle cx="300" cy="300" r="200"/>
+          </svg>
+          <div class="showcase-phone">
+            <i class="iphone-button iphone-action"></i>
+            <i class="iphone-button iphone-volume-up"></i>
+            <i class="iphone-button iphone-volume-down"></i>
+            <i class="iphone-button iphone-power"></i>
+            <div class="phone-screen">
+              <span class="iphone-island"><i></i></span>
+              <div class="phone-bar"><span class="phone-brand"><b>V</b>ELENTRA</span><svg><use href="#ic-bell"/></svg></div>
+              <p class="phone-greeting">Good morning, <strong>Alex</strong> 👋</p>
+              <div class="phone-overview">
+                <div class="overview-head"><span>Total Overview</span><small>This Month</small></div>
+                <div class="overview-chart"><span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span><span style="height:70%"></span><span style="height:60%"></span><span style="height:85%"></span><span style="height:50%"></span></div>
+              </div>
+              <div class="phone-stats">
+                <div><b>1,248</b><small>Employees</small></div>
+                <div><b>256</b><small>Active Requests</small></div>
+                <div><b>89%</b><small>Tasks Completed</small></div>
+                <div><b>1,037</b><small>Assets</small></div>
+              </div>
+              <div class="phone-quick">
+                <span>Quick Access</span>
+                <div class="quick-grid">
+                  <div><svg><use href="#ic-hr"/></svg><small>HRMS</small></div>
+                  <div><svg><use href="#ic-payroll"/></svg><small>Payroll</small></div>
+                  <div><svg><use href="#ic-leave"/></svg><small>Leave</small></div>
+                  <div><svg><use href="#ic-asset"/></svg><small>Assets</small></div>
+                </div>
+              </div>
+              <div class="phone-nav">
+                <svg class="active"><use href="#ic-home"/></svg>
+                <svg><use href="#ic-analytics"/></svg>
+                <span class="phone-fab"><svg><use href="#ic-plus"/></svg></span>
+                <svg><use href="#ic-inbox"/></svg>
+                <svg><use href="#ic-profile"/></svg>
+              </div>
+            </div>
           </div>
-          <div class="scene-phone"><div class="phone-notch"></div><span class="scene-product-tag">Smart-ID</span><small>Good morning</small><b>My Workplace</b><div class="phone-id"><span>VELENTRA</span><strong>Priya Mehta</strong><small>EMP 1024</small></div><div class="phone-check"><b>09:32</b><span>Checked in</span></div></div>
-          <div class="scene-pass"><span>SMART-GATE · VISITOR PASS</span><b>Ankit Shah</b><small>Meeting · Gate 1</small><i>QR</i></div>
-          <div class="scene-people-card"><span>SMART-PEOPLE</span><div><i>HR</i><p><b>People &amp; Payroll</b><small>2,480 employees</small></p></div><em><strong>96.8%</strong><small>Attendance</small></em><em><strong>18</strong><small>Reviews due</small></em></div>
-          <div class="scene-float scene-float-one"><i>✓</i><span><b>Smart-ID attendance</b><small>Marked just now</small></span></div>
-          <div class="scene-float scene-float-two"><b>3</b><small>Connected products</small></div>
+          <div class="showcase-card card-hr"><svg><use href="#ic-asset"/></svg><span>Asset<br>Management</span></div>
+          <div class="showcase-card card-project"><svg><use href="#ic-payroll"/></svg><span>Smart HR &amp;<br>Payroll</span></div>
+          <div class="showcase-card card-finance"><svg><use href="#ic-visitor"/></svg><span>Visitor<br>Management</span></div>
+          <div class="showcase-card card-chat"><svg><use href="#ic-gate"/></svg><span>Smart Gate<br>Management</span></div>
+          <div class="showcase-card card-assets"><svg><use href="#ic-vehicle"/></svg><span>Vehicle<br>Tracking</span></div>
+          <div class="showcase-card card-helpdesk"><svg><use href="#ic-dashboard"/></svg><span>Reports &amp;<br>Dashboard</span></div>
         </div>
       </div>
     </section>
@@ -61,10 +115,16 @@
     <section class="home-section products-section" id="products">
       <div class="container">
         <div class="home-heading centered reveal"><span>Connected product suite</span><h2>Three products. One operational advantage.</h2><p>Give employees, security teams, and HR leaders the tools they need while keeping every workflow connected.</p></div>
-        <div class="product-highlight-grid">
-          <article class="product-highlight tilt-card reveal"><div class="product-icon">ID</div><span>Employee Work Buddy</span><h3>Smart-ID</h3><p>Digital employee ID, attendance, leave, approvals, notice board, expense claims, and employee self-service.</p><ul><li>Digital Employee ID</li><li>Attendance &amp; Leave</li><li>Approvals</li><li>Expense Claims</li></ul><a class="product-link" href="smart-id.html">View Product <b>→</b></a></article>
-          <article class="product-highlight featured tilt-card reveal delay-1"><div class="product-icon">SG</div><span>Visitor &amp; Gate Control</span><h3>Smart-Gate</h3><p>Visitor registration, QR pass, OTP verification, approval workflow, entry/exit tracking, and gate security dashboard.</p><ul><li>Visitor Registration</li><li>QR Visitor Pass</li><li>OTP Verification</li><li>Entry &amp; Exit Tracking</li></ul><a class="product-link" href="gate-operations.html">View Product <b>→</b></a></article>
-          <article class="product-highlight tilt-card reveal delay-2"><div class="product-icon">SP</div><span>People &amp; HR Operations</span><h3>Smart-People</h3><p>HR management, employee lifecycle, attendance, payroll, performance, reports, and productivity analytics.</p><ul><li>Employee Management</li><li>Payroll</li><li>Performance</li><li>HR Reports</li></ul><a class="product-link" href="smart-people.html">View Product <b>→</b></a></article>
+        <div class="product-highlight-grid" data-product-slider>
+          <article class="product-highlight tilt-card reveal"><div class="product-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2.2"/><path d="M6.5 16c.5-1.8 1.5-2.7 2.5-2.7s2 .9 2.5 2.7M14 10h4M14 14h4"/></svg></div><span>Employee Work Buddy</span><h3>Smart-ID</h3><p>Smart ID empowers employees with instant access to attendance, leave, approvals, and company updates from a single app.
+Designed to simplify daily operations, improve engagement, and enhance workplace efficiency.</p><ul><li>Employee ID</li><li>Attendance</li><li>Leave </li><li>Approval </li><li>Notice Board & Announcements</li><li>Team AttendanceTravel & Expense Claims</li></ul><a class="product-link" href="smart-id.html">View Product <b>→</b></a></article>
+          <article class="product-highlight featured tilt-card reveal delay-1"><div class="product-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V5l7-2v17M19 20V5l-7-2M3 20h18M8 11h1M15 11h1"/><path d="m9.5 15 1.7 1.7 3.6-3.7"/></svg></div><span>Visitor &amp; Gate Control</span><h3>Smart-Gate</h3><p>Smart Gate is an intelligent gate automation platform that streamlines visitor management, vehicle tracking, material movement, and security compliance through real-time monitoring and digital access control.</p><ul><li>Visitor</li><li>Vehicle</li><li>Material Inward & Outward</li><li>Document Verification</li><li>Live Monitoring Dashboard</li><li>QR & Digital Pass</li></ul><a class="product-link" href="gate-operations.html">View Product <b>→</b></a></article>
+          <article class="product-highlight tilt-card reveal delay-2"><div class="product-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.7 2.7-6 6-6s6 2.3 6 6"/><circle cx="17" cy="9" r="2.2"/><path d="M15.8 14.5c3 .3 5.2 2.2 5.2 5.5"/></svg></div><span>People &amp; HR Operations</span><h3>Smart-People</h3><p>Smart People is a comprehensive Human Resource Management platform that simplifies employee administration, recruitment, attendance, payroll, performance, and HR operations through a single intelligent system.</p><ul><li>Employee</li><li>Recruitment</li><li>Employee Lifecycle</li><li>Attendance Management</li><li>Shift Management</li><li>Payroll Management</li></ul><a class="product-link" href="smart-people.html">View Product <b>→</b></a></article>
+        </div>
+        <div class="product-slider-controls" data-product-slider-controls aria-label="Product slider controls">
+          <button type="button" data-product-prev aria-label="Previous product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+          <div class="product-slider-dots" data-product-dots></div>
+          <button type="button" data-product-next aria-label="Next product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
         </div>
       </div>
     </section>
@@ -72,100 +132,106 @@
     <section class="home-section what-section" id="what-we-do">
       <div class="container what-grid">
         <div class="what-copy reveal">
-          <div class="home-heading"><span>What We Do</span><h2>Digitizing Workforce, Visitors, and HR Operations</h2><p>Velentra brings together employee management, smart identity, visitor access, gate operations, and HR automation into one connected business platform.</p></div>
+          <div class="home-heading"><span>What We Do</span><h2>Innovation Meets Business</h2><p>Making business operations simpler, smarter, and more connected.
+Empowering organizations with technology built for the future.</p></div>
           <div class="benefit-grid"><article><i>01</i><b>Mobile-First Experience</b><small>Simple workflows wherever work happens.</small></article><article><i>02</i><b>Smart Automation</b><small>Reduce repetitive tasks and follow-ups.</small></article><article><i>03</i><b>Real-Time Insights</b><small>See activity and make faster decisions.</small></article><article><i>04</i><b>Secure Access Control</b><small>Protect people, places, and records.</small></article></div>
         </div>
-        <div class="orbit-system reveal delay-1" aria-label="Velentra connected capabilities">
+        <div class="orbit-system reveal delay-1" aria-label="Velantra connected capabilities">
           <svg class="orbit-symbols" aria-hidden="true">
-            <symbol id="orbit-id" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M13 10h4M13 14h4M7 16h4"/></symbol>
+            <symbol id="orbit-id" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2.5"/><circle cx="9" cy="11" r="2"/><path d="M13 10h4M13 14h4M7 16h4"/></symbol>
             <symbol id="orbit-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></symbol>
-            <symbol id="orbit-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 9h16M8 13h2M12 13h2M8 17h2"/></symbol>
+            <symbol id="orbit-calendar" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2.5"/><path d="M8 3v4M16 3v4M5 10h14M9 14h2M13 14h2"/></symbol>
             <symbol id="orbit-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m8.5 12 2.3 2.4 4.9-5"/></symbol>
-            <symbol id="orbit-pass" viewBox="0 0 24 24"><path d="M5 7a2 2 0 0 0 0 4v6h14v-6a2 2 0 0 0 0-4V5H5z"/><path d="M9 8h6M9 12h4"/></symbol>
-            <symbol id="orbit-qr" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM15 14h2v2h-2zM18 14h2v5h-2zM14 18h3v2h-3z"/></symbol>
-            <symbol id="orbit-otp" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+            <symbol id="orbit-pass" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></symbol>
+            <symbol id="orbit-qr" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.2"/><rect x="14" y="4" width="6" height="6" rx="1.2"/><rect x="4" y="14" width="6" height="6" rx="1.2"/><path d="M14 14h2v2h-2zM18 14h2v6h-2zM14 18h2v2h-2z"/></symbol>
+            <symbol id="orbit-otp" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2.5"/><path d="M8 11h.01M12 11h.01M16 11h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
             <symbol id="orbit-gate" viewBox="0 0 24 24"><path d="M5 20V5l7-2v17M19 20V5l-7-2M3 20h18M8 11h1M15 11h1"/></symbol>
-            <symbol id="orbit-dashboard" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="4" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="10" width="7" height="10" rx="1"/></symbol>
-            <symbol id="orbit-report" viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7M4 20h16"/></symbol>
-            <symbol id="orbit-payroll" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="13" rx="2"/><path d="M4 10h16M8 15h4"/></symbol>
+            <symbol id="orbit-dashboard" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.4"/><rect x="14" y="4" width="6" height="6" rx="1.4"/><rect x="4" y="14" width="6" height="6" rx="1.4"/><rect x="14" y="14" width="6" height="6" rx="1.4"/></symbol>
+            <symbol id="orbit-report" viewBox="0 0 24 24"><path d="M5 20V9M12 20V5M19 20v-8M3 20h18"/></symbol>
+            <symbol id="orbit-payroll" viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="10" rx="2"/><path d="M8 10h8M8 14h5"/></symbol>
             <symbol id="orbit-productivity" viewBox="0 0 24 24"><path d="m5 16 4-4 3 2 6-7M14 7h4v4"/><circle cx="12" cy="12" r="9"/></symbol>
           </svg>
-          <div class="orbit-center"><span class="brand-logo"><img src="Velentra-logo.png" alt="Velentra"></span></div>
+          <div class="orbit-center"><span class="brand-logo"><img src="Velentra-logo.png" alt="Velantra"></span></div>
           <div class="orbit-ring orbit-ring-one">
-            <span class="orbit-node orbit-blue" style="--p:0" aria-label="Smart ID"><span class="orbit-content"><b>Smart ID</b><svg><use href="#orbit-id"></use></svg></span></span>
-            <span class="orbit-node orbit-green" style="--p:1" aria-label="Attendance"><span class="orbit-content"><b>Attendance</b><svg><use href="#orbit-clock"></use></svg></span></span>
-            <span class="orbit-node orbit-orange" style="--p:2" aria-label="Leave"><span class="orbit-content"><b>Leave</b><svg><use href="#orbit-calendar"></use></svg></span></span>
-            <span class="orbit-node orbit-purple" style="--p:3" aria-label="Approvals"><span class="orbit-content"><b>Approvals</b><svg><use href="#orbit-check"></use></svg></span></span>
+            <span class="orbit-node orbit-blue" style="--p:0" aria-label="People"><span class="orbit-content"><b>People</b><svg><use href="#orbit-id"></use></svg></span></span>
+            <span class="orbit-node orbit-green" style="--p:1" aria-label="Process"><span class="orbit-content"><b>Process</b><svg><use href="#orbit-clock"></use></svg></span></span>
+            <span class="orbit-node orbit-orange" style="--p:2" aria-label="Performance"><span class="orbit-content"><b>Performance</b><svg><use href="#orbit-calendar"></use></svg></span></span>
           </div>
           <div class="orbit-ring orbit-ring-two">
-            <span class="orbit-node orbit-cyan" style="--p:0" aria-label="Visitor Pass"><span class="orbit-content"><b>Visitor Pass</b><svg><use href="#orbit-pass"></use></svg></span></span>
-            <span class="orbit-node orbit-violet" style="--p:1" aria-label="QR Scan"><span class="orbit-content"><b>QR Scan</b><svg><use href="#orbit-qr"></use></svg></span></span>
-            <span class="orbit-node orbit-amber" style="--p:2" aria-label="OTP Verification"><span class="orbit-content"><b>OTP Verify</b><svg><use href="#orbit-otp"></use></svg></span></span>
-            <span class="orbit-node orbit-emerald" style="--p:3" aria-label="Gate Access"><span class="orbit-content"><b>Gate Access</b><svg><use href="#orbit-gate"></use></svg></span></span>
+            <span class="orbit-node orbit-cyan" style="--p:0" aria-label="Scan"><span class="orbit-content"><b>Scan</b><svg><use href="#orbit-pass"></use></svg></span></span>
+            <span class="orbit-node orbit-violet" style="--p:1" aria-label="Track"><span class="orbit-content"><b>Track</b><svg><use href="#orbit-qr"></use></svg></span></span>
+            <span class="orbit-node orbit-amber" style="--p:2" aria-label="Secure"><span class="orbit-content"><b>Secure</b><svg><use href="#orbit-otp"></use></svg></span></span>
           </div>
           <div class="orbit-ring orbit-ring-three">
-            <span class="orbit-node orbit-indigo" style="--p:0" aria-label="HR Dashboard"><span class="orbit-content"><b>HR Dashboard</b><svg><use href="#orbit-dashboard"></use></svg></span></span>
-            <span class="orbit-node orbit-rose" style="--p:1" aria-label="Reports"><span class="orbit-content"><b>Reports</b><svg><use href="#orbit-report"></use></svg></span></span>
-            <span class="orbit-node orbit-gold" style="--p:2" aria-label="Payroll"><span class="orbit-content"><b>Payroll</b><svg><use href="#orbit-payroll"></use></svg></span></span>
-            <span class="orbit-node orbit-teal" style="--p:3" aria-label="Productivity"><span class="orbit-content"><b>Productivity</b><svg><use href="#orbit-productivity"></use></svg></span></span>
+            <span class="orbit-node orbit-indigo" style="--p:0" aria-label="Acquire"><span class="orbit-content"><b>Acquire</b><svg><use href="#orbit-dashboard"></use></svg></span></span>
+            <span class="orbit-node orbit-rose" style="--p:1" aria-label="Empower"><span class="orbit-content"><b>Empower</b><svg><use href="#orbit-report"></use></svg></span></span>
+            <span class="orbit-node orbit-gold" style="--p:2" aria-label="Elevate"><span class="orbit-content"><b>Elevate</b><svg><use href="#orbit-payroll"></use></svg></span></span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-section insights-section">
-      <div class="container intelligence-heading reveal">
-        <div><span>Connected Intelligence</span><h2>See every signal.<br>Act on what matters.</h2></div>
-        <p>Velentra turns workforce, gate, and HR activity into one reliable operational picture, helping every team move with clarity.</p>
-      </div>
-      <div class="container intelligence-layout">
-        <div class="intelligence-board reveal">
-          <div class="intelligence-top"><div><i></i><span><b>Business Intelligence</b><small>Live across all Velentra products</small></span></div><em>Updated now</em></div>
-          <div class="intelligence-kpis">
-            <article class="metric-id"><span><i>ID</i> Smart-ID</span><b>98.7%</b><small>Workforce attendance</small><em>+4.2% this month</em></article>
-            <article class="metric-gate"><span><i>SG</i> Smart-Gate</span><b>42 sec</b><small>Average visitor entry</small><em>18% faster</em></article>
-            <article class="metric-people"><span><i>SP</i> Smart-People</span><b>92</b><small>Workforce health score</small><em>Strong and improving</em></article>
-          </div>
-          <div class="intelligence-main">
-            <div class="intelligence-chart"><header><span><b>Connected operations</b><small>Activity across the last 7 days</small></span><em>+12.8%</em></header><div class="chart-area"><span style="height:38%"></span><span style="height:50%"></span><span style="height:46%"></span><span style="height:66%"></span><span style="height:58%"></span><span style="height:83%"></span><span style="height:72%"></span><span style="height:94%"></span></div><footer><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span><span>Today</span></footer></div>
-            <div class="intelligence-activity"><header><b>Needs attention</b><span>4 items</span></header><div><i>ID</i><span><b>Leave approvals</b><small>6 requests pending</small></span><em>Review</em></div><div><i>SG</i><span><b>Visitor arrivals</b><small>12 expected today</small></span><em>View</em></div><div><i>SP</i><span><b>Performance reviews</b><small>18 due this week</small></span><em>Open</em></div></div>
-          </div>
-        </div>
-        <div class="intelligence-outcomes reveal delay-1">
-          <article><span>01</span><div><b>One source of truth</b><p>Bring identity, entry, people, and workflow records into one connected operational view.</p></div><strong>100%</strong></article>
-          <article><span>02</span><div><b>Faster action</b><p>Surface approvals, exceptions, and risks before they slow down teams.</p></div><strong>42%</strong></article>
-          <article><span>03</span><div><b>Audit-ready operations</b><p>Keep every important decision and movement recorded, searchable, and secure.</p></div><strong>24/7</strong></article>
         </div>
       </div>
     </section>
 
     <section class="home-section faq-section" id="faq">
       <div class="container faq-grid">
-        <div class="home-heading reveal"><span>Frequently Asked Questions</span><h2>Everything you need to know about Velentra.</h2><p>Learn how the connected platform fits your teams, workflows, and industry.</p><a class="button button-primary" href="#contact">Talk to our team</a></div>
+        <div class="home-heading reveal"><span>Frequently Asked Questions</span><h2>Everything you need to know about Velantra.</h2><p>Learn how the connected platform fits your teams, workflows, and industry.</p><a class="button button-primary" href="#contact">Talk to our team</a></div>
         <div class="faq-list reveal delay-1">
-          <details open><summary>What is Velentra?<i></i></summary><p>Velentra is a business management platform that helps companies manage smart employee ID, visitor management, gate operations, and HR workflows from one place.</p></details>
+          <details open><summary>What is Velantra?<i></i></summary><p>Velantra is a business management platform that helps companies manage smart employee ID, visitor management, gate operations, and HR workflows from one place.</p></details>
           <details><summary>What is Smart-ID?<i></i></summary><p>Smart-ID helps employees access digital ID, attendance, leave requests, approvals, notice board, pulse surveys, and expense claims through a mobile-first experience.</p></details>
           <details><summary>What is Smart-Gate?<i></i></summary><p>Smart-Gate helps organizations manage visitors, QR passes, OTP verification, host approvals, gate entry, exit tracking, and visitor reports.</p></details>
           <details><summary>What is Smart-People?<i></i></summary><p>Smart-People is an HR management platform for employee records, attendance, leave, payroll, productivity analytics, reports, and performance workflows.</p></details>
-          <details><summary>Can Velentra be customized?<i></i></summary><p>Yes, Velentra can be customized based on company workflows, departments, approval levels, and reporting needs.</p></details>
-          <details><summary>Is Velentra suitable for multiple industries?<i></i></summary><p>Yes. Velentra supports corporate offices, manufacturing, education, healthcare, logistics, construction sites, and commercial buildings.</p></details>
+          <details><summary>Can Velantra be customized?<i></i></summary><p>Yes, Velantra can be customized based on company workflows, departments, approval levels, and reporting needs.</p></details>
+          <details><summary>Is Velantra suitable for multiple industries?<i></i></summary><p>Yes. Velantra supports corporate offices, manufacturing, education, healthcare, logistics, construction sites, and commercial buildings.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="home-cta" id="contact"><div class="container reveal"><div><span>Ready to modernize operations?</span><h2>Build a smarter, more connected workplace.</h2><p>See how Velentra can fit your workforce, gate, and HR workflows.</p></div><div class="cta-contact"><a class="button" href="mailto:sales@velentra.com">Book a Demo <b>→</b></a><span><small>Talk to sales</small><b>+91 93544 44569</b></span></div></div></section>
+    <section class="home-cta" id="contact">
+      <div class="container reveal">
+        <div class="contact-intro">
+          <h2 class="contact-title">Contact Us</h2>
+          <span>Ready to modernize operations?</span>
+          <h3>Build a smarter, more connected workplace.</h3>
+          <p>Tell us about your organization and the workflows you want to improve. Our team will contact you with a tailored Velantra demo.</p>
+          <div class="contact-details"><span><small>Talk to sales</small><b>+91 93544 44569</b></span><span><small>Email us</small><b>sales@velantra.com</b></span></div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-form-head"><span>Book a demo</span><h3>Tell us about your needs</h3><p>Complete the form and our team will get back to you.</p></div>
+          <div class="contact-form-grid">
+            <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Your full name" required></label>
+            <label>Work email<input type="email" name="email" autocomplete="email" placeholder="name@company.com" required></label>
+            <label>Company<input type="text" name="company" autocomplete="organization" placeholder="Company name" required></label>
+            <label>Product interest<select name="product" required><option value="" selected disabled>Select a product</option><option>Smart-ID</option><option>Smart-Gate</option><option>Smart-People</option><option>Complete Velantra Suite</option></select></label>
+          </div>
+          <label>How can we help?<textarea name="message" placeholder="Tell us about your workforce, gate, or HR requirements" required></textarea></label>
+          <button class="button contact-submit" type="submit">Submit demo request <b>→</b></button>
+          <small>By submitting, you agree to be contacted about your request.</small>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer premium-footer">
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span>VELENTRA</span></a><p>Velentra helps businesses digitize workforce, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span>Velantra</span></a><p>Velantra helps businesses digitize workforce, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
       <div><b>Products</b><a href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a></div>
-      <div><b>Company</b><a href="#what-we-do">About</a><a href="#contact">Contact</a><a href="#contact">Pricing</a><a href="#faq">Resources</a></div>
-      <div><b>Contact</b><a href="tel:+919354444569">+91 93544 44569</a><a href="mailto:sales@velentra.com">sales@velentra.com</a><a href="https://www.velentra.com">www.velentra.com</a></div>
+      <div><b>Company</b><a href="index.html#what-we-do">About</a><a href="index.html#contact">Contact</a><a href="index.html#contact">Pricing</a><a href="index.html#faq">Resources</a></div>
+      <div><b>Contact</b><a href="tel:+919354444569">+91 93544 44569</a><a href="mailto:sales@Velantra.com">sales@Velantra.com</a><a href="https://www.Velantra.com">www.Velantra.com</a></div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 Velentra. All Rights Reserved.</span><span>Empowering Innovation</span></div>
+    <div class="container footer-bottom"><span>© 2026 Velantra. All Rights Reserved.</span><span>BUSINESS MANAGEMENT PLATFORM</span></div>
   </footer>
   <script src="js/common.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/scroll-effects.js"></script>
+  <!--
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.1/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.1/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/hero3d.js"></script>
+  -->
 </body>
 </html>

@@ -1,0 +1,306 @@
+/* Final home-page theme applied consistently across all product pages. */
+body.product-v3 {
+  --theme-primary: #6358e8;
+  --theme-primary-dark: #5549d8;
+  --theme-secondary: #70c6c4;
+  --theme-ink: #111222;
+  --theme-muted: #686b7b;
+  --theme-surface: rgba(249, 249, 247, 0.78);
+  --theme-line: rgba(99, 88, 232, 0.16);
+  --theme-shadow: 0 22px 55px rgba(24, 25, 52, 0.1);
+  color: var(--theme-ink);
+  background: #f8f8fb;
+}
+
+body.smart-id-refresh {
+  --sid-blue: var(--theme-ink);
+  --sid-purple: var(--theme-primary);
+  --sid-orange: var(--theme-primary);
+  --sid-soft: #f4f3fc;
+}
+
+body.smart-gate-refresh {
+  --gate-blue: var(--theme-ink);
+  --gate-violet: var(--theme-primary);
+  --gate-orange: var(--theme-secondary);
+  --gate-ink: var(--theme-ink);
+  --gate-muted: var(--theme-muted);
+}
+
+body.product-v3 ::selection {
+  color: #fff;
+  background: var(--theme-primary);
+}
+
+/* Home-style light lavender heroes. */
+body.product-v3 .smart-id-hero,
+body.product-v3 .smart-gate-hero,
+body.product-v3 .people-hero {
+  background:
+    radial-gradient(circle at 84% 12%, rgba(126, 116, 237, 0.28), transparent 30%),
+    linear-gradient(180deg, #fff 0%, #fbfbff 72%, #f4f3fa 100%);
+}
+
+body.product-v3 .smart-id-hero::before,
+body.product-v3 .smart-gate-hero::before,
+body.product-v3 .people-hero::before {
+  background:
+    radial-gradient(ellipse at 18% 30%, rgba(125, 106, 248, 0.24), transparent 28%),
+    radial-gradient(ellipse at 88% 52%, rgba(112, 72, 255, 0.3), transparent 38%);
+  filter: blur(34px);
+}
+
+body.product-v3 .smart-id-hero-copy h1,
+body.product-v3 .smart-gate-hero-copy h1,
+body.product-v3 .people-hero h1,
+body.product-v3 .section-heading h2,
+body.product-v3 .companion-copy h2,
+body.product-v3 .module-panel h2,
+body.product-v3 .industry-panel h2,
+body.product-v3 .security-copy h2,
+body.product-v3 .dashboard-copy h2,
+body.product-v3 .digital-pass-copy h2 {
+  color: var(--theme-ink);
+}
+
+body.product-v3 .smart-id-hero-copy h2,
+body.product-v3 .smart-gate-hero-copy h2,
+body.product-v3 .people-hero h2,
+body.product-v3 .people-hero h1 em,
+body.product-v3 .eyebrow,
+body.product-v3 .eyebrow.light,
+body.product-v3 .people-label {
+  color: var(--theme-primary);
+}
+
+body.product-v3 .eyebrow span {
+  background: var(--theme-primary);
+}
+
+body.product-v3 .people-label {
+  background: rgba(99, 88, 232, 0.12);
+}
+
+body.product-v3 p,
+body.product-v3 .smart-id-hero-copy p,
+body.product-v3 .smart-gate-hero-copy p,
+body.product-v3 .people-hero p {
+  color: var(--theme-muted);
+}
+
+body.product-v3 .button-primary,
+body.product-v3 .hero-actions .button-primary,
+body.product-v3 .smart-id-cta-actions .button,
+body.product-v3 .page-cta .button {
+  color: #fff;
+  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark));
+  box-shadow: 0 14px 32px rgba(84, 72, 216, 0.28);
+}
+
+body.product-v3 .button-ghost {
+  color: var(--theme-ink);
+  border-color: rgba(17, 18, 34, 0.1);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+/* Shared section rhythm and surfaces. */
+body.product-v3 main > .section,
+body.product-v3 .smart-companion,
+body.product-v3 .smart-benefits,
+body.product-v3 .smart-security,
+body.product-v3 .gate-dashboard-section,
+body.product-v3 .gate-journey-section,
+body.product-v3 .digital-pass-section,
+body.product-v3 .roles-section,
+body.product-v3 .industries-section,
+body.product-v3 .people-trust,
+body.product-v3 .people-analytics,
+body.product-v3 .people-modules,
+body.product-v3 .people-why {
+  color: var(--theme-ink);
+  background: rgba(247, 247, 244, 0.88) !important;
+}
+
+body.product-v3 .smart-feature-section,
+body.product-v3 .smart-security,
+body.product-v3 .gate-dashboard-section,
+body.product-v3 .digital-pass-section,
+body.product-v3 .people-analytics,
+body.product-v3 .people-why {
+  background: linear-gradient(145deg, #fff, #efeff7) !important;
+}
+
+/* Glass surfaces shared with the home page. */
+body.product-v3 .smart-feature-grid article,
+body.product-v3 .smart-benefit-grid article,
+body.product-v3 .module-panel,
+body.product-v3 .industry-panel,
+body.product-v3 .fingerprint-card,
+body.product-v3 .gate-trust-grid,
+body.product-v3 .journey-grid article,
+body.product-v3 .role-grid article,
+body.product-v3 .industry-grid span,
+body.product-v3 .pass-info-card,
+body.product-v3 .pass-assurance,
+body.product-v3 .analytics-preview,
+body.product-v3 .people-module-grid article,
+body.product-v3 .people-trust-grid,
+body.product-v3 .people-why-grid {
+  border-color: rgba(255, 255, 255, 0.82);
+  color: var(--theme-ink);
+  background: var(--theme-surface);
+  box-shadow: var(--theme-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body.product-v3 .smart-feature-grid article:hover,
+body.product-v3 .journey-grid article:hover,
+body.product-v3 .role-grid article:hover,
+body.product-v3 .people-module-grid article:hover {
+  border-color: rgba(99, 88, 232, 0.35);
+  box-shadow: 0 28px 65px rgba(59, 52, 151, 0.16);
+}
+
+body.product-v3 .smart-feature-grid i,
+body.product-v3 .smart-benefit-grid i,
+body.product-v3 .gate-trust-grid i,
+body.product-v3 .journey-grid i,
+body.product-v3 .role-grid i,
+body.product-v3 .people-trust-grid i,
+body.product-v3 .people-module-grid i,
+body.product-v3 .people-why-grid i {
+  color: var(--theme-primary);
+  background: rgba(99, 88, 232, 0.12);
+}
+
+body.product-v3 .smart-feature-grid article:nth-child(2n) i,
+body.product-v3 .people-trust-grid article:nth-child(3n) i,
+body.product-v3 .people-module-grid article:nth-child(3n) i {
+  color: #408f96;
+  background: rgba(112, 198, 196, 0.18);
+}
+
+body.product-v3 .smart-feature-grid h3,
+body.product-v3 .smart-benefit-grid h3,
+body.product-v3 .gate-trust-grid h3,
+body.product-v3 .journey-grid h3,
+body.product-v3 .role-grid h3,
+body.product-v3 .people-module-grid h3,
+body.product-v3 .people-why-grid h3,
+body.product-v3 .analytics-showcase h2 {
+  color: var(--theme-ink);
+}
+
+body.product-v3 .smart-feature-grid li,
+body.product-v3 .smart-benefit-grid p,
+body.product-v3 .gate-trust-grid p,
+body.product-v3 .journey-grid p,
+body.product-v3 .role-grid li,
+body.product-v3 .people-module-grid p,
+body.product-v3 .people-why-grid p {
+  color: var(--theme-muted);
+}
+
+body.product-v3 .smart-feature-grid li::before,
+body.product-v3 .pass-timeline span::before {
+  background-color: var(--theme-primary);
+}
+
+body.product-v3 .gate-check-list li::before,
+body.product-v3 .role-grid li::before {
+  color: var(--theme-primary);
+  background: transparent;
+}
+
+body.product-v3 .module-pills span,
+body.product-v3 .industry-pills span,
+body.product-v3 .security-list span,
+body.product-v3 .smart-id-cta-points span {
+  border-color: var(--theme-line);
+  color: #5148ba;
+  background: rgba(99, 88, 232, 0.1);
+}
+
+body.product-v3 .industry-pills span:nth-child(2n),
+body.product-v3 .security-list span:nth-child(2n) {
+  color: #347d82;
+  background: rgba(112, 198, 196, 0.14);
+}
+
+/* Keep feature visuals dark, matching the home-page featured panels. */
+body.product-v3 .gate-login-card,
+body.product-v3 .visitor-pass,
+body.product-v3 .gate-benefits,
+body.product-v3 .vms-dashboard aside {
+  color: #fff;
+  background:
+    radial-gradient(circle at 84% 5%, rgba(141, 130, 238, 0.38), transparent 30%),
+    linear-gradient(145deg, #171829, #0d0e1c);
+}
+
+body.product-v3 .gate-login-glow {
+  background: rgba(99, 88, 232, 0.28);
+}
+
+body.product-v3 .login-brand .shield-icon,
+body.product-v3 .login-content button {
+  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark));
+  box-shadow: 0 12px 28px rgba(84, 72, 216, 0.28);
+}
+
+body.product-v3 .vms-stats article {
+  border-left-color: var(--theme-primary);
+}
+
+body.product-v3 .people-chart span,
+body.product-v3 .analytics-line-chart::after,
+body.product-v3 .performance-line::after {
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+/* Home-style CTA treatment. */
+body.product-v3 .page-cta,
+body.product-v3 .smart-id-cta,
+body.product-v3 .gate-page-cta,
+body.product-v3 .people-closing-cta {
+  color: var(--theme-ink);
+  background:
+    radial-gradient(circle at 82% 15%, rgba(130, 113, 225, 0.24), transparent 32%),
+    linear-gradient(145deg, #fff 0%, #f4f3fc 58%, #dedcf5 100%) !important;
+}
+
+body.product-v3 .page-cta .container,
+body.product-v3 .smart-id-cta .container,
+body.product-v3 .people-closing-cta .container {
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  color: var(--theme-ink);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 30px 75px rgba(48, 42, 122, 0.13);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+body.product-v3 .page-cta h2,
+body.product-v3 .smart-id-cta h2,
+body.product-v3 .people-closing-cta h2 {
+  color: var(--theme-ink) !important;
+}
+
+body.product-v3 .page-cta p,
+body.product-v3 .smart-id-cta p,
+body.product-v3 .people-closing-cta p {
+  color: var(--theme-muted);
+}
+
+body.product-v3 .gate-page-cta .button,
+body.product-v3 .people-closing-cta .people-cta-actions .button:first-child {
+  color: #fff !important;
+  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark)) !important;
+}
+
+body.product-v3 .people-closing-cta .people-cta-actions .button:last-child {
+  color: var(--theme-primary);
+  background: rgba(255, 255, 255, 0.82);
+}

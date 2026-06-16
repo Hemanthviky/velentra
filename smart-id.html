@@ -1,92 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Velentra Smart ID gives employees one simple app for attendance, approvals and workplace updates.">
-  <title>Smart ID Employee App | Velentra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velantra Smart ID is the employee work buddy for attendance, leave, approvals, surveys, announcements, digital ID, and expense claims.">
+  <title>Smart ID Employee Work Buddy | Velantra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/product-theme.css">
+  <link rel="stylesheet" href="css/smart-id-theme.css">
+  <link rel="stylesheet" href="css/unified-theme.css">
+  <link rel="stylesheet" href="css/site-shell.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body class="product-v3 smart-page">
-  <div class="top-strip">Smart ID Employee App <span>Everyday work, made simpler.</span></div>
+<body class="product-v3 smart-page smart-id-refresh">
   <header class="site-header home-header">
-    <a class="brand brand-lockup" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span><strong>VELENTRA</strong><small>Empowering Innovation</small></span></a>
+    <a class="brand brand-lockup" href="index.html" aria-label="Velantra home"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span><strong>VELANTRA<sup>TM</sup></strong><small>BUSINESS MANAGEMENT PLATFORM</small></span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="main-nav"><a href="index.html">Home</a><a class="active" href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a><a class="button button-small button-primary" href="index.html#contact">Contact</a></nav>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a><a class="button button-small button-primary" href="index.html#contact">Contact</a></nav>
   </header>
+
   <main>
-    <section class="inner-hero">
-      <div class="container inner-hero-grid">
-        <div class="reveal">
-          <div class="eyebrow light"><span></span> Smart ID employee app</div>
-          <h1>One Employee App for Everyday Workplace Needs</h1>
-          <p>Velentra Smart ID gives employees a simple mobile app to manage attendance, approvals, company updates, and workplace information.</p>
-          <div class="hero-actions"><a class="button button-primary" href="index.html#contact">Book a Demo <b>-></b></a><a class="button button-ghost" href="#features">Explore Features</a></div>
+    <section class="smart-id-hero">
+      <div class="container smart-id-hero-grid">
+        <div class="smart-id-hero-copy reveal">
+          <div class="eyebrow"><span></span> Smart ID Employee Work Buddy</div>
+          <h1>One App. Everything Your Employees Need.</h1>
+          <h2>Leave the complexity behind.</h2>
+          <p>Smart ID handles your everyday employee management needs so you can focus on growing your business. From attendance tracking and leave management to approvals, employee information, surveys, announcements, and expense claims, Smart ID brings your entire employee management ecosystem together through a single mobile-first platform.</p>
+          <div class="hero-actions"><a class="button button-primary" href="index.html#contact">Book a Free Demo <b>→</b></a><a class="button button-ghost" href="#features">Explore Features</a></div>
+
         </div>
-        <div class="inner-visual reveal delay-1">
-          <div class="phone-stage"><div class="phone"><div class="phone-top"></div><div class="phone-screen"><div class="app-top"><span>Hello, Priya</span><b>09:41</b></div><div class="id-card-mini"><span>VELENTRA</span><strong>Priya Mehta</strong><small>Product Manager · EMP 1024</small></div><div class="checkin-ring"><b>09:32</b><span>Checked in</span></div><div class="app-actions"><i>Leave</i><i>Claims</i><i>Updates</i></div></div></div></div>
-          <div class="floating-note note-one"><span>✓</span><b>Attendance marked</b><small>09:32 AM</small></div><div class="floating-note note-two"><span>!</span><b>Claim approved</b><small>Just now</small></div>
+
+        <div class="smart-id-phone-stage reveal delay-1" aria-label="Smart ID mobile app screens">
+          <div class="phone-glow"></div>
+          <div class="smart-real-phone">
+            <i class="smart-phone-button smart-phone-action"></i><i class="smart-phone-button smart-phone-volume-up"></i><i class="smart-phone-button smart-phone-volume-down"></i><i class="smart-phone-button smart-phone-power"></i>
+            <div class="smart-phone-glass" data-phone-carousel>
+              <span class="smart-phone-island"><i></i></span>
+              <div class="pdf-phone-track">
+                <section class="smart-app-screen leave-screen">
+                  <header><b>INDSYS<sup>®</sup></b><span class="app-user">●</span></header>
+                  <small class="screen-label">LEAVE BALANCE</small>
+                  <div class="leave-balance"><strong>CASUAL LEAVE</strong><b>11</b><span>Available</span><small>1 used · 12 total</small></div>
+                  <button class="apply-leave">＋ Apply for Leave</button>
+                  <small class="screen-label">RECENT APPLICATIONS</small>
+                  <div class="request-list"><div><i>▣</i><span><b>Casual Leave</b><small>12 Mar · 1 Day</small></span><em>OPEN</em></div><div><i>▣</i><span><b>Casual Leave</b><small>20 Jan · 1 Day</small></span><em>OPEN</em></div><div><i>▣</i><span><b>Casual Leave</b><small>4 Apr · 3 Days</small></span><em class="approved">APPROVED</em></div></div>
+                  <nav class="smart-app-nav"><span>⌂<small>Home</small></span><span>◉<small>Attendance</small></span><span>♧<small>Leave</small></span><span>▦<small>Company</small></span><span>⊖<small>More</small></span></nav>
+                </section>
+                <section class="smart-app-screen attendance-screen">
+                  <header><span>‹</span><b>ATTENDANCE CALENDAR</b><span>◉</span></header>
+                  <div class="calendar-month"><span>‹</span><strong>March 2025</strong><span>›</span></div>
+                  <div class="calendar-days head"><b>SU</b><b>MO</b><b>TU</b><b>WE</b><b>TH</b><b>FR</b><b>SA</b></div>
+                  <div class="calendar-days dates"><i></i><i></i><i></i><i></i><i>1</i><i>2</i><i>3</i><i>2</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i><i>13</i><i>15</i><i>16</i><i>14</i><i>15</i><i>18</i><i>18</i><i>13</i><i>25</i><i>23</i><i>25</i><i>25</i><i>25</i><i>29</i><i class="today">18</i><i>25</i><i>26</i><i>26</i><i>27</i><i>28</i><i>29</i></div>
+                  <div class="calendar-key"><span>Present</span><span>Absent</span><span>Half Day</span><span>Holiday</span></div>
+                  <div class="attendance-stats"><span><b>26</b><small>PRESENT</small></span><span><b>5</b><small>ABSENT</small></span><span><b>2</b><small>HALF DAY</small></span></div>
+                  <nav class="smart-app-nav"><span>⌂<small>Home</small></span><span>◉<small>Attendance</small></span><span>♧<small>Leave</small></span><span>▦<small>Company</small></span><span>⊖<small>More</small></span></nav>
+                </section>
+                <section class="smart-app-screen profile-screen">
+                  <header><b>INDSYS<sup>®</sup></b><span>⊗</span></header>
+                  <div class="profile-avatar"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#f4f5fb"/><circle cx="50" cy="38" r="18" fill="#aeb5c8"/><path d="M20 91c4-24 17-36 30-36s26 12 30 36Z" fill="#7f89a3"/></svg></div>
+                  <h3>Alan</h3><p>Consultant</p>
+                  <dl><div><dt>Employee ID</dt><dd>HR-IN-045</dd></div><div><dt>Contact Number</dt><dd>637********</dd></div><div><dt>Emergency Contact</dt><dd>73********</dd></div><div><dt>Blood Group</dt><dd>AB+</dd></div></dl>
+                  <div class="profile-actions"><span>IN</span><span>IN<br><small>LATE IN</small></span><span>OUT</span></div>
+                  <nav class="smart-app-nav"><span>⌂<small>Home</small></span><span>◉<small>Attendance</small></span><span>♧<small>Leave</small></span><span>▦<small>Company</small></span><span>⊖<small>More</small></span></nav>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="phone-carousel-dots" aria-label="Choose app screen"><button class="active" type="button" aria-label="Show leave management"></button><button type="button" aria-label="Show attendance calendar"></button><button type="button" aria-label="Show digital employee ID"></button></div>
         </div>
       </div>
     </section>
-    <nav class="subnav"><div class="container"><a href="#overview">Business outcomes</a><a href="#features">Everything inside</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="index.html#contact">Request demo</a></div></nav>
 
-    <section class="section" id="overview"><div class="container">
-      <div class="section-heading centered reveal"><div class="eyebrow"><span></span> Better daily experiences</div><h2>Make workplace tasks feel effortless.</h2><p>Employees get one familiar place for everyday needs. Managers get the visibility and approvals they need without the follow-up.</p></div>
-      <div class="outcome-strip reveal"><div><b>Faster check-ins</b><span>Start the workday without queues or paper.</span></div><div><b>Easier approvals</b><span>Keep leave and claims moving.</span></div><div><b>Clear updates</b><span>Reach every employee instantly.</span></div><div><b>Better records</b><span>Keep employee information organized.</span></div></div>
-    </div></section>
+    <nav class="subnav"><div class="container"><a href="#companion">Overview</a><a href="#features">Features</a><a href="#benefits">Benefits</a><a href="#industries">Industries</a><a href="#security">Security</a></div></nav>
 
-    <section class="section split-section feature-showcase">
-      <div class="container split-grid">
-        <div class="split-visual reveal"><div class="soft-panel"><div class="mobile-preview"><div class="mobile-header"><span>My workplace</span><b>Today</b></div><div class="welcome-card"><small>Good morning</small><strong>Ready for a productive day?</strong><button>Check in now</button></div><div class="mini-grid"><div><b>12</b><span>Leave balance</span></div><div><b>02</b><span>Pending claims</span></div></div><div class="activity-card"><b>Latest updates</b><span>Town hall at 4:00 PM</span><span>Expense claim approved</span></div></div><div class="floating-note note-one"><span>✓</span><b>Leave approved</b><small>Just now</small></div></div></div>
-        <div class="split-copy reveal delay-1"><div class="eyebrow"><span></span> Built around the employee</div><h2>A simpler way to start, manage and finish the workday.</h2><p>No scattered forms or long email threads. Smart ID keeps the daily employee experience clear and connected.</p><div class="benefit-list"><div><i>01</i><span><b>Digital identity, always available</b><small>Give every employee a professional workplace ID.</small></span></div><div><i>02</i><span><b>Requests in a few taps</b><small>Submit leave and claims without paperwork.</small></span></div><div><i>03</i><span><b>Updates that reach everyone</b><small>Share notices from one trusted place.</small></span></div></div></div>
+
+
+    <section class="section smart-companion" id="companion">
+      <div class="container companion-grid">
+        <div class="companion-copy reveal delay-1">
+          <div class="eyebrow"><span></span> Your Digital Workplace Companion</div>
+          <h2>Empower your employees. Simplify every workday.</h2>
+          <p>Smart ID is an intelligent employee management platform designed to streamline workforce management and improve employee engagement.</p>
+          <p>Built as part of the Velantra Business Management Platform, Smart ID empowers employees to manage daily activities independently while providing HR teams and managers with a unified workforce view.</p>
+          <div class="companion-points"><span>Attendance Tracking</span><span>Leave Management</span><span>Approval Workflows</span><span>Digital Employee ID</span><span>Expense Claims</span><span>Surveys &amp; Feedback</span><span>Company Announcements</span><span>Mobile-First Experience</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="features"><div class="container">
-      <div class="section-heading reveal"><div class="eyebrow"><span></span> Everything inside Smart ID</div><h2>Useful features for every workday.</h2><p>Each feature is designed to remove a small but frequent workplace hassle.</p></div>
-      <div class="capability-index">
-        <section class="capability-chapter reveal">
-          <header><i>01</i><span>Start the day</span><h3>Identity and attendance</h3><p>Everything employees need to enter, check in, and manage their workplace identity.</p></header>
-          <div class="capability-list">
-            <a href="#how"><i>ID</i><span><b>Digital Employee ID</b><small>A professional workplace ID, always available.</small></span><em>Identity</em></a>
-            <a href="#how"><i>IN</i><span><b>Attendance Check-In</b><small>Fast daily check-ins with accurate records.</small></span><em>Attendance</em></a>
-            <a href="#how"><i>IO</i><span><b>Office Entry and Exit</b><small>Clear movement visibility throughout the day.</small></span><em>Movement</em></a>
-            <a href="#how"><i>ME</i><span><b>My Profile</b><small>Employee information organized in one place.</small></span><em>Self service</em></a>
-          </div>
-        </section>
-        <section class="capability-chapter reveal">
-          <header><i>02</i><span>Keep work moving</span><h3>Requests and approvals</h3><p>Simple workflows that remove paperwork and keep decisions moving.</p></header>
-          <div class="capability-list">
-            <a href="#how"><i>L</i><span><b>Leave Requests</b><small>Submit and review leave without long email threads.</small></span><em>Requests</em></a>
-            <a href="#how"><i>EX</i><span><b>Expense Claims</b><small>Submit, review, and track workplace expenses.</small></span><em>Claims</em></a>
-            <a href="#how"><i>OK</i><span><b>Manager Approvals</b><small>Give managers one clear decision queue.</small></span><em>Managers</em></a>
-          </div>
-        </section>
-        <section class="capability-chapter reveal">
-          <header><i>03</i><span>Stay connected</span><h3>Updates and visibility</h3><p>Keep the workforce informed while leaders get a clear operational view.</p></header>
-          <div class="capability-list">
-            <a href="#how"><i>N</i><span><b>Notice Board</b><small>Share company updates instantly with everyone.</small></span><em>Communication</em></a>
-            <a href="#how"><i>CO</i><span><b>Company Attendance</b><small>See team attendance and availability clearly.</small></span><em>Visibility</em></a>
-            <a href="#how"><i>P</i><span><b>Pulse and Feedback</b><small>Understand how employees feel at work.</small></span><em>Feedback</em></a>
-            <a href="#how"><i>R</i><span><b>Attendance Reports</b><small>Useful summaries without maintaining spreadsheets.</small></span><em>Reports</em></a>
-          </div>
-        </section>
-        <a class="capability-demo reveal" href="index.html#contact"><span>Want to see the complete workflow?</span><b>Explore Smart ID with your team</b><i>Book a demo -></i></a>
+    <section class="section smart-feature-section" id="features">
+      <div class="container">
+        <div class="section-heading centered reveal"><div class="eyebrow"><span></span> Features of Smart ID</div><h2>Everything employees need in one secure app.</h2><p>Seven connected feature areas remove repetitive work and keep every employee workflow visible.</p></div>
+        <div class="smart-feature-grid">
+          <article class="reveal"><i>ID</i><h3>Digital Employee ID</h3><ul><li>Employee profile and ID card</li><li>Blood group and emergency contact</li><li>Department and designation</li><li>Company information</li><li>Mobile access and secure authentication</li></ul></article>
+          <article class="reveal delay-1"><i>AT</i><h3>Attendance Management</h3><ul><li>Mobile check-in and check-out</li><li>GPS-based attendance</li><li>Attendance calendar</li><li>Present and absent tracking</li><li>Reports and real-time monitoring</li></ul></article>
+          <article class="reveal delay-2"><i>LV</i><h3>Leave Management</h3><ul><li>Apply leave anytime</li><li>Leave balance and history</li><li>Multiple leave types</li><li>Manager notifications</li><li>Status and holiday calendar tracking</li></ul></article>
+          <article class="reveal"><i>AP</i><h3>Approval Workflows</h3><ul><li>Leave and attendance approvals</li><li>Expense approvals</li><li>Multi-level approvals</li><li>Approval notifications and history</li><li>Workflow tracking</li></ul></article>
+          <article class="reveal delay-1"><i>NB</i><h3>Notice Board</h3><ul><li>Company announcements</li><li>Policy updates and circulars</li><li>Event notifications</li><li>Read acknowledgements</li><li>Department updates and pinned notices</li></ul></article>
+          <article class="reveal delay-2"><i>SV</i><h3>Daily Pulse Surveys</h3><ul><li>Employee surveys and feedback</li><li>Instant polls and satisfaction tracking</li><li>Knowledge assessments</li><li>Analytics dashboard</li><li>Response reports</li></ul></article>
+          <article class="reveal"><i>EX</i><h3>Travel &amp; Expense Claims</h3><ul><li>Expense submission and receipt upload</li><li>Travel claims</li><li>Approval workflow</li><li>Claim status tracking</li><li>Reimbursement monitoring and reporting</li></ul></article>
+        </div>
       </div>
-    </div></section>
+    </section>
 
-    <section class="section feature-showcase" id="how"><div class="container">
-      <div class="section-heading centered reveal"><div class="eyebrow"><span></span> Simple from day one</div><h2>Easy for employees. Clear for managers.</h2></div>
-      <div class="steps-grid"><article class="step-card reveal"><i>STEP 01</i><h3>Invite your employees</h3><p>Set up the team and give everyone access to their Smart ID app.</p></article><article class="step-card reveal delay-1"><i>STEP 02</i><h3>Employees get to work</h3><p>They check in, submit requests and read updates from one place.</p></article><article class="step-card reveal delay-2"><i>STEP 03</i><h3>Managers stay informed</h3><p>Approvals, attendance and useful reports remain easy to see.</p></article></div>
-    </div></section>
-    <section class="section product-faq" id="faq"><div class="container"><div class="section-heading centered reveal"><div class="eyebrow"><span></span> Smart-ID FAQ</div><h2>Ready for your employee workflows.</h2></div><div class="product-faq-list reveal"><details open><summary>Can Smart-ID support custom approval workflows?</summary><p>Yes. Leave, claims, attendance, and other employee workflows can be configured around your company structure.</p></details><details><summary>Is Smart-ID mobile-first?</summary><p>Yes. It is designed around a simple employee app experience for everyday workplace tasks.</p></details><details><summary>Can managers access attendance reports?</summary><p>Managers can receive role-based visibility into attendance, requests, approvals, and reports.</p></details></div></div></section>
-    <section class="page-cta"><div class="container"><div><h2>Ready for a better employee experience?</h2><p>See how Smart ID fits into your everyday workplace.</p></div><a class="button" href="index.html#contact">Book a Smart ID demo <b>-></b></a></div></section>
+    <section class="section smart-benefits" id="benefits">
+      <div class="container">
+        <div class="section-heading centered reveal"><div class="eyebrow light"><span></span> Why Choose Smart ID?</div><h2>A better employee experience with real-time visibility.</h2></div>
+        <div class="smart-benefit-grid">
+          <article class="reveal"><i>01</i><h3>Increase Productivity</h3><p>Automate routine activities and reduce manual effort.</p></article>
+          <article class="reveal delay-1"><i>02</i><h3>Improve Employee Experience</h3><p>Give employees easy access anytime, anywhere.</p></article>
+          <article class="reveal delay-2"><i>03</i><h3>Real-Time Visibility</h3><p>Track attendance, approvals, leave, requests, and expenses instantly.</p></article>
+          <article class="reveal"><i>04</i><h3>Better Communication</h3><p>Keep employees informed through centralized announcements.</p></article>
+          <article class="reveal delay-1"><i>05</i><h3>Faster Decision Making</h3><p>Gain real-time insights and make faster decisions.</p></article>
+          <article class="reveal delay-2"><i>06</i><h3>Secure &amp; Reliable</h3><p>Enterprise-grade security ensures data privacy and protection.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section smart-modules" id="industries">
+      <div class="container modules-layout">
+        <div class="module-panel reveal"><div class="eyebrow"><span></span> Powerful Modules Included</div><h2>Employee management at your fingertips.</h2><div class="module-pills"><span>Digital ID</span><span>Attendance</span><span>Leave Management</span><span>Approval Workflows</span><span>Notice Board</span><span>Surveys &amp; Feedback</span><span>Expense Claims</span></div></div>
+        <div class="industry-panel reveal delay-1"><div class="eyebrow"><span></span> Designed for Every Industry</div><h2>Built for diverse workplaces.</h2><div class="industry-pills"><span>Manufacturing</span><span>Corporate Offices</span><span>Healthcare</span><span>Education</span><span>Construction</span><span>Logistics</span><span>Retail</span><span>IT &amp; Technology</span><span>Hospitality</span><span>Financial Services</span></div></div>
+      </div>
+    </section>
+
+    <section class="section smart-security" id="security">
+      <div class="container security-grid">
+        <div class="security-copy reveal"><div class="eyebrow light"><span></span> Enterprise-Grade Security</div><h2>Secure employee access and protected business data.</h2><p>Smart ID provides a secure, scalable platform with role-based permissions and reliable activity records.</p><div class="security-list"><span>Role-Based Access Control</span><span>Secure Authentication</span><span>Data Encryption</span><span>Audit Logs</span><span>Activity Tracking</span><span>Mobile Security</span><span>Secure Cloud Infrastructure</span><span>Permission-Based Access</span></div></div>
+        <div class="fingerprint-card reveal delay-1"><span>Employee Management</span><h3>At Your Fingertips</h3><ul><li>Check-in and check-out</li><li>Apply leave</li><li>Track attendance</li><li>Submit expenses</li><li>Receive notifications</li><li>View announcements</li><li>Complete surveys</li><li>Manage profile information</li></ul></div>
+      </div>
+    </section>
+
+    <section class="page-cta smart-id-cta">
+      <div class="container">
+        <div class="smart-id-cta-copy"><span>Ready to transform employee management?</span><h2>Give every employee a smarter way to work.</h2><p>Bring attendance, leave, approvals, digital identity, announcements, surveys, and expenses into one secure mobile experience.</p></div>
+        <div class="smart-id-cta-points"><span>One employee app</span><span>Real-time workforce visibility</span><span>Secure and scalable</span></div>
+        <div class="smart-id-cta-actions"><a class="button" href="index.html#contact">Schedule a Demo <b>→</b></a><a href="mailto:sales@velantra.com">Contact Sales</a></div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span>Velentra</span></a><p>Secure and scalable workforce, gate, and HR operations.</p></div><div><b>Products</b><a href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a></div><div><b>Company</b><a href="index.html#what-we-do">About</a><a href="index.html#contact">Contact</a></div><div><b>Get in touch</b><a href="mailto:sales@velentra.com">sales@velentra.com</a><a href="tel:+919354444569">+91 93544 44569</a></div></div><div class="container footer-bottom"><span>© 2026 Velentra. All Rights Reserved.</span><span>Empowering Innovation</span></div></footer>
+
+  <footer class="site-footer premium-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span>Velantra</span></a><p>Velantra helps businesses digitize workforce, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
+      <div><b>Products</b><a href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a></div>
+      <div><b>Company</b><a href="index.html#what-we-do">About</a><a href="index.html#contact">Contact</a><a href="index.html#contact">Pricing</a><a href="index.html#faq">Resources</a></div>
+      <div><b>Contact</b><a href="tel:+919354444569">+91 93544 44569</a><a href="mailto:sales@Velantra.com">sales@Velantra.com</a><a href="https://www.Velantra.com">www.Velantra.com</a></div>
+    </div>
+    <div class="container footer-bottom"><span>&copy; 2026 Velantra. All Rights Reserved.</span><span>BUSINESS MANAGEMENT PLATFORM</span></div>
+  </footer>
+
   <script src="js/common.js"></script>
+  <script src="js/scroll-effects.js"></script>
   <script src="js/smart-id.js"></script>
 </body>
 </html>
