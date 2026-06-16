@@ -1011,21 +1011,11 @@ body.home-page{
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: #ffffff;
+  background: #ffffff url("../hero bg.png") center / cover no-repeat;
 }
 .platform-hero::before{
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: clamp(58px, 8vw, 118px);
-  left: 50%;
-  width: 112vw;
-  height: clamp(360px, 54vw, 760px);
-  pointer-events: none;
-  background: url("../velantra-hero bg.png") center / 100% auto no-repeat;
-  filter: blur(2px);
-  opacity: .78;
-  transform: translateX(-50%) scale(1.04);
+  content: none;
+  display: none;
 }
 .platform-hero-grid{
   position: relative;
@@ -1348,24 +1338,11 @@ body.home-page{
     width: min(760px, 88%);
     margin-top: 8vh;
   }
-  .platform-hero::before{
-    top: 66px;
-    width: 128vw;
-    height: 500px;
-    filter: blur(4px);
-    opacity: .62;
-  }
 }
 @media (max-width: 640px){
   .platform-hero{
     padding: 105px 0 45px;
-  }
-  .platform-hero::before{
-    top: 48px;
-    width: 168vw;
-    height: 390px;
-    filter: blur(3px);
-    opacity: .44;
+    background-position: center top;
   }
   .platform-hero-grid{
     min-height: calc(100svh - 150px);
@@ -2132,6 +2109,222 @@ body.home-page{
   .orbit-ring,
   .orbit-ring .orbit-node .orbit-content{
     animation: none !important;
+  }
+}
+
+/* ---------- Current-theme What We Do panel ---------- */
+.what-section{
+  padding: 90px 0;
+  background:
+    radial-gradient(circle at 82% 22%, rgba(135, 117, 255, .16), transparent 30%),
+    linear-gradient(180deg, #f8f8fb, #eef0f7);
+}
+.what-section .what-grid{
+  position: relative;
+  min-height: 480px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, .78fr);
+  gap: 0;
+  align-items: center;
+  overflow: hidden;
+  padding: 64px 0 64px clamp(32px, 5vw, 58px);
+  border: 1px solid rgba(204, 209, 232, .9);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 92% 14%, rgba(135, 117, 255, .14), transparent 34%),
+    rgba(255, 255, 255, .9);
+  box-shadow: 0 28px 80px rgba(36, 43, 92, .12);
+}
+.what-section .what-copy{
+  position: relative;
+  z-index: 4;
+  max-width: 680px;
+}
+.what-section .home-heading > span{
+  display: none;
+}
+.what-section .home-heading h2{
+  margin-bottom: 16px;
+  color: #111222;
+  font-size: clamp(44px, 5.1vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+}
+.what-section .home-heading p{
+  max-width: 610px;
+  margin: 0;
+  color: #5f6473;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.what-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.what-actions .button{
+  min-height: 41px;
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.what-actions .button-primary{
+  color: #fff;
+  background: linear-gradient(135deg, #796ef0, #5549d8);
+  box-shadow: 0 14px 30px rgba(84, 72, 216, .22);
+}
+.what-actions .button-secondary{
+  color: #171526;
+  border: 1px solid rgba(99, 88, 232, .18);
+  background: rgba(255, 255, 255, .72);
+}
+.what-orbit-clip{
+  position: relative;
+  align-self: stretch;
+  min-height: 480px;
+  overflow: hidden;
+}
+.what-orbit-clip .orbit-system{
+  position: absolute;
+  left: 88%;
+  top: 50%;
+  width: 760px;
+  height: 760px;
+  max-width: none;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+.what-orbit-clip .orbit-system:before{
+  width: 0;
+  height: 0;
+  filter: none;
+}
+.what-orbit-clip .orbit-ring{
+  border: 2px dotted rgba(134, 143, 184, .34);
+}
+.what-orbit-clip .orbit-ring-one{
+  --orbit-radius: 150px;
+  --spin-duration: 26s;
+  width: 300px;
+  height: 300px;
+}
+.what-orbit-clip .orbit-ring-two{
+  --orbit-radius: 245px;
+  --spin-duration: 38s;
+  width: 490px;
+  height: 490px;
+}
+.what-orbit-clip .orbit-ring-three{
+  --orbit-radius: 340px;
+  --spin-duration: 54s;
+  width: 680px;
+  height: 680px;
+}
+.what-orbit-clip .orbit-center{
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(204, 209, 232, .85);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 18px 40px rgba(84, 72, 216, .14);
+}
+.what-orbit-clip .orbit-center .brand-logo{
+  width: 76px;
+  height: 76px;
+  filter: saturate(1.2);
+}
+.what-orbit-clip .orbit-center .brand-logo img{
+  mix-blend-mode: normal;
+}
+.what-orbit-clip .orbit-ring .orbit-node{
+  width: 44px;
+  height: 44px;
+  border: 1px solid color-mix(in srgb, var(--orbit-color) 28%, #fff);
+  background: var(--orbit-soft);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--orbit-color) 18%, transparent);
+}
+.what-orbit-clip .orbit-ring .orbit-node .orbit-content{
+  width: 44px;
+  height: 44px;
+}
+.what-orbit-clip .orbit-ring .orbit-node svg{
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+.what-orbit-clip .orbit-ring .orbit-node .orbit-content b{
+  bottom: calc(100% + 8px);
+  padding: 4px 8px;
+  border-color: rgba(204, 209, 232, .9);
+  border-radius: 12px;
+  color: #26335f;
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 0 10px 24px rgba(47, 58, 118, .1);
+  font-size: 9px;
+}
+.what-orbit-clip .orbit-blue,
+.what-orbit-clip .orbit-violet,
+.what-orbit-clip .orbit-amber,
+.what-orbit-clip .orbit-indigo,
+.what-orbit-clip .orbit-gold{
+  --orbit-color: #7668f0 !important;
+  --orbit-soft: #f0edff !important;
+}
+.what-orbit-clip .orbit-cyan{
+  --orbit-color: #4f9deb !important;
+  --orbit-soft: #eaf4ff !important;
+}
+.what-orbit-clip .orbit-green,
+.what-orbit-clip .orbit-orange,
+.what-orbit-clip .orbit-rose{
+  --orbit-color: #58bfc6 !important;
+  --orbit-soft: #e8fbfb !important;
+}
+@media (max-width: 1050px){
+  .what-section .what-grid{
+    grid-template-columns: 1fr;
+    min-height: 760px;
+    padding: 52px 28px 0;
+  }
+  .what-orbit-clip{
+    min-height: 380px;
+    margin: 20px -28px 0;
+  }
+  .what-orbit-clip .orbit-system{
+    left: 68%;
+    width: 620px;
+    height: 620px;
+    transform: translate(-50%, -50%) scale(.84);
+  }
+}
+@media (max-width: 640px){
+  .what-section{
+    padding: 62px 0;
+  }
+  .what-section .what-grid{
+    min-height: 650px;
+    padding: 34px 20px 0;
+    border-radius: 22px;
+  }
+  .what-section .home-heading h2{
+    font-size: clamp(34px, 12vw, 48px);
+  }
+  .what-section .home-heading p{
+    font-size: 14px;
+  }
+  .what-actions{
+    gap: 10px;
+  }
+  .what-orbit-clip{
+    min-height: 310px;
+    margin: 18px -20px 0;
+  }
+  .what-orbit-clip .orbit-system{
+    left: 72%;
+    width: 530px;
+    height: 530px;
+    transform: translate(-50%, -50%) scale(.66);
   }
 }
 

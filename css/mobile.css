@@ -150,6 +150,10 @@
     display: none;
   }
 
+  body.home-page .what-orbit-clip .orbit-system {
+    display: block;
+  }
+
   body.home-page .what-grid,
   body.home-page .faq-grid,
   body.home-page .home-cta .container,
