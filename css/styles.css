@@ -101,8 +101,8 @@ a{
 }
 .brand-logo{
   position: relative;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   display: block;
   flex: 0 0 auto;
   overflow: hidden;
@@ -1174,7 +1174,7 @@ a{
   color: #d4def0
 }
 .demo-points span:before{
-  content: "✓";
+  content: "\2713";
   color: #65e2a5;
   margin-right: 10px
 }
@@ -1957,5 +1957,21 @@ a{
   .footer-grid>div:first-child{
     grid-column: auto
   }
+}
+
+.powered-by{
+  margin: 12px 0 0;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--muted);
+  text-transform: uppercase
+}
+.powered-by strong{
+  color: var(--blue);
+  font-weight: 700
+}
+.footer-bottom .powered-by,
+.footer-bottom strong{
+  color: inherit
 }
 

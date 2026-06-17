@@ -19,7 +19,7 @@
 .smart-gate-hero-copy p{max-width:660px;margin:0 0 10px;color:var(--gate-muted)}
 .gate-proof{display:flex;gap:22px;margin:28px 0}
 .gate-proof span{display:flex;align-items:center;gap:8px;color:#284565;font-size:14px;font-weight:700}
-.gate-proof span:before{content:"✓";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;color:#fff;background:#38945b;font-size:12px}
+.gate-proof span:before{content:"\2713";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;color:#fff;background:#38945b;font-size:12px}
 
 /* ── Hero login stage ── */
 .gate-login-stage{position:relative;display:grid;place-items:center;min-height:570px}
@@ -78,7 +78,7 @@
 .vg-tl-item:not(:last-child):before{content:'';position:absolute;left:10px;top:28px;width:2px;height:calc(100% - 10px);background:rgba(255,255,255,.1)}
 .vg-tl-dot{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.18);position:relative;z-index:1;flex-shrink:0}
 .vg-tl-item.done .vg-tl-dot{background:#6257e8;border-color:#6257e8;box-shadow:0 0 0 4px rgba(98,87,232,.2)}
-.vg-tl-item.done .vg-tl-dot:after{content:'✓';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:9px;font-weight:900}
+.vg-tl-item.done .vg-tl-dot:after{content:'\2713';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:9px;font-weight:900}
 .vg-tl-item.active .vg-tl-dot{background:#6358e8;border-color:#6358e8;box-shadow:0 0 0 4px rgba(99,88,232,.22)}
 .vg-tl-label{font-size:13px;color:#a0a2b4}
 .vg-tl-item.done .vg-tl-label{color:#e0e1ef}
@@ -103,7 +103,7 @@
 .dashboard-copy h2{margin:18px 0;color:var(--gate-blue)}.dashboard-copy p{color:var(--gate-muted)}
 .gate-check-list{display:grid;gap:13px;margin:27px 0 33px;padding:0;list-style:none}
 .gate-check-list li{display:flex;gap:11px;color:#32354b;font-size:15px;font-weight:650}
-.gate-check-list li:before{content:"✓";color:var(--gate-violet);font-weight:900}
+.gate-check-list li:before{content:"\2713";color:var(--gate-violet);font-weight:900}
 .vms-dashboard{display:grid;grid-template-columns:150px 1fr;min-height:490px;overflow:hidden;border:1px solid rgba(255,255,255,.8);border-radius:23px;background:#fff;box-shadow:0 35px 75px rgba(47,39,120,.17);transform:perspective(1500px) rotateY(-3deg)}
 .vms-dashboard aside{display:flex;flex-direction:column;gap:7px;padding:23px 13px;color:#d9d9e4;background:radial-gradient(circle at 84% 5%,rgba(141,130,238,.32),transparent 30%),linear-gradient(145deg,#171829,#0d0e1c)}
 .vms-dashboard aside b{margin:0 5px 26px;color:#fff;font-size:14px;letter-spacing:.12em}
@@ -214,7 +214,7 @@
 .role-grid article{padding:27px;border:1px solid rgba(99,88,232,.12);border-radius:20px;background:#fff;box-shadow:0 20px 50px rgba(45,39,111,.08)}
 .role-grid i{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;color:var(--gate-violet);background:#eeecff;font-style:normal;font-weight:800}
 .role-grid h3{margin:15px 0;color:var(--gate-blue)}.role-grid ul{display:grid;gap:10px;margin:0;padding:0;list-style:none}.role-grid li{color:var(--gate-muted);font-size:13px}
-.role-grid li:before{content:"✓";margin-right:8px;color:var(--gate-violet);font-weight:800}
+.role-grid li:before{content:"\2713";margin-right:8px;color:var(--gate-violet);font-weight:800}
 
 /* ── Gate benefits strip ── */
 .gate-benefits{padding:42px 0;color:#fff;background:radial-gradient(circle at 84% 5%,rgba(141,130,238,.42),transparent 30%),linear-gradient(135deg,#171829,#0d0e1c)}
@@ -253,7 +253,7 @@
 /* Feature chips */
 .gate-cta-chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 34px}
 .gate-cta-chips span{display:inline-flex;align-items:center;gap:7px;padding:7px 15px;border-radius:30px;color:#5148ba;background:rgba(99,88,232,.08);border:1px solid rgba(99,88,232,.18);font-size:13px;font-weight:600}
-.gate-cta-chips span::before{content:"✓";color:var(--gate-violet);font-size:12px;font-weight:900}
+.gate-cta-chips span::before{content:"\2713";color:var(--gate-violet);font-size:12px;font-weight:900}
 
 /* Action buttons */
 .gate-cta-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}

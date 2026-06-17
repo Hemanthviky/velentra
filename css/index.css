@@ -611,7 +611,7 @@
   color: #e3edff;
 }
 .product-highlight li:before {
-  content: "✓";
+  content: "\2713";
   width: 17px;
   height: 17px;
   display: grid;
