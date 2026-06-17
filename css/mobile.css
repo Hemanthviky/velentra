@@ -635,6 +635,35 @@
   body.people-page .people-closing-cta .container {
     padding: 28px 20px;
   }
+
+  body.product-v3 .smart-id-hero-copy h1,
+  body.product-v3 .smart-gate-hero-copy h1,
+  body.product-v3 .people-hero h1 {
+    color: var(--theme-ink);
+    font-family: "Manrope", "DM Sans", sans-serif;
+    font-size: clamp(40px, 12vw, 56px);
+    font-weight: 800;
+    line-height: 1.04;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body.product-v3 .smart-id-hero-copy h1 .h1-big,
+  body.product-v3 .smart-id-hero-copy h1 .h1-sub {
+    display: block;
+    margin-top: 0;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+  }
+
+  body.product-v3 .people-hero h1 em {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+  }
 }
 
 @media (max-width: 480px) {

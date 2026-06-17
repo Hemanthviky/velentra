@@ -88,6 +88,43 @@ body.product-v3 .people-hero p {
   color: var(--theme-muted);
 }
 
+/* Unified product hero title treatment across Smart-ID, Smart-Gate, and Smart-People. */
+body.product-v3 .smart-id-hero-copy,
+body.product-v3 .smart-gate-hero-copy,
+body.product-v3 .people-hero-copy {
+  text-align: left;
+}
+
+body.product-v3 .smart-id-hero-copy h1,
+body.product-v3 .smart-gate-hero-copy h1,
+body.product-v3 .people-hero h1 {
+  margin: 18px 0 14px;
+  color: var(--theme-ink);
+  font-family: "Manrope", "DM Sans", sans-serif;
+  font-size: clamp(50px, 4.5vw, 72px);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+body.product-v3 .smart-id-hero-copy h1 .h1-big,
+body.product-v3 .smart-id-hero-copy h1 .h1-sub {
+  display: block;
+  margin-top: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+body.product-v3 .people-hero h1 em {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
 body.product-v3 .button-primary,
 body.product-v3 .hero-actions .button-primary,
 body.product-v3 .smart-id-cta-actions .button,
