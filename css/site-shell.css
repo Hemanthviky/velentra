@@ -77,7 +77,7 @@ body[class] .site-header.home-header .brand-lockup small {
 body[class] .site-header.home-header .main-nav {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2.7vw, 46px);
+  gap: clamp(10px, 1.4vw, 24px);
   color: #171526;
   font-size: 15px
 }

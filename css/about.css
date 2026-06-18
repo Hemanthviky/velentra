@@ -1,0 +1,621 @@
+body.about-page {
+  --about-card: rgba(255, 255, 255, 0.74);
+  --about-line: rgba(99, 88, 232, 0.16);
+  --about-shadow: 0 24px 65px rgba(48, 42, 122, 0.12);
+}
+
+.about-page .about-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 100svh;
+  padding: 135px 0 44px;
+  background:
+    radial-gradient(circle at 84% 14%, rgba(126, 116, 237, 0.28), transparent 30%),
+    linear-gradient(180deg, #fff 0%, #fbfbff 72%, #f4f3fa 100%);
+}
+
+.about-page .about-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 8%;
+  left: 7%;
+  width: 112%;
+  height: 42%;
+  border-radius: 52% 48% 58% 42% / 72% 52% 48% 28%;
+  background:
+    radial-gradient(ellipse at 18% 30%, rgba(125, 106, 248, 0.26), transparent 28%),
+    radial-gradient(ellipse at 88% 52%, rgba(112, 72, 255, 0.3), transparent 38%);
+  filter: blur(34px);
+  transform: rotate(-4deg) skewX(-8deg);
+  pointer-events: none;
+}
+
+.about-page .about-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(460px, 1.08fr);
+  gap: clamp(42px, 6vw, 92px);
+  align-items: center;
+}
+
+.about-page .about-hero-copy h1 {
+  max-width: 720px;
+  margin: 18px 0 22px;
+  color: var(--theme-ink);
+  font-size: clamp(48px, 4vw, 82px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.about-page .about-hero-copy p {
+  max-width: 620px;
+  color: var(--theme-muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.about-page .about-system-panel {
+  position: relative;
+  min-height: 560px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.about-page .about-system-panel::before,
+.about-page .about-system-panel::after {
+  content: "";
+  position: absolute;
+  inset: 58px;
+  border: 1px solid rgba(99, 88, 232, 0.14);
+  border-radius: 50%;
+}
+
+.about-page .about-system-panel::after {
+  inset: 122px;
+  border-color: rgba(112, 198, 196, 0.22);
+}
+
+.about-page .system-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 190px;
+  height: 190px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 8px;
+  padding: 24px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background:
+    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.2), transparent 28%),
+    linear-gradient(145deg, #171829, #0d0e1c);
+  box-shadow: 0 25px 55px rgba(13, 14, 28, 0.22);
+  transform: translate(-50%, -50%);
+}
+
+.about-page .system-core .brand-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.about-page .system-core b {
+  font: 800 18px/1.15 "Manrope", sans-serif;
+}
+
+.about-page .system-core small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+}
+
+.about-page .system-node {
+  position: absolute;
+  z-index: 3;
+  width: min(230px, 42%);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 40px rgba(48, 42, 122, 0.12);
+}
+
+.about-page .system-node i,
+.about-page .coverage-grid i,
+.about-page .solution-title i,
+.about-page .approach-grid i,
+.about-page .work-steps i,
+.about-page .why-grid i {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  flex: 0 0 44px;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--theme-primary);
+  background: rgba(99, 88, 232, 0.12);
+  font: 800 12px "Manrope", sans-serif;
+  font-style: normal;
+}
+
+.about-page .system-node:nth-child(2n) i,
+.about-page .coverage-grid article:nth-child(2n) i,
+.about-page .solution-feature:nth-child(2n) .solution-title i {
+  color: #408f96;
+  background: rgba(112, 198, 196, 0.18);
+}
+
+.about-page .system-node b {
+  display: block;
+  color: var(--theme-ink);
+  font-size: 15px;
+}
+
+.about-page .system-node small {
+  color: var(--theme-muted);
+  font-size: 11px;
+}
+
+.about-page .node-one {
+  top: 82px;
+  left: 54px;
+}
+
+.about-page .node-two {
+  top: 100px;
+  right: 42px;
+}
+
+.about-page .node-three {
+  bottom: 90px;
+  left: 42px;
+}
+
+.about-page .node-four {
+  right: 54px;
+  bottom: 78px;
+}
+
+.about-page .about-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.about-page .about-metrics div {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 18px;
+  background: var(--about-card);
+  box-shadow: 0 18px 45px rgba(48, 42, 122, 0.09);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.about-page .about-metrics strong {
+  color: var(--theme-primary);
+  font: 800 34px/1 "Manrope", sans-serif;
+}
+
+.about-page .about-metrics span {
+  margin-top: 8px;
+  color: var(--theme-muted);
+  font-size: 13px;
+}
+
+.about-page .about-split,
+.about-page .erp-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 6vw, 90px);
+  align-items: start;
+}
+
+.about-page .about-copy {
+  padding: clamp(26px, 3vw, 42px);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 24px;
+  background: var(--about-card);
+  box-shadow: var(--about-shadow);
+}
+
+.about-page .about-copy p {
+  color: var(--theme-muted);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-page .about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .coverage-grid,
+.about-page .approach-grid,
+.about-page .why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.about-page .approach-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-page .why-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-page .coverage-grid article,
+.about-page .approach-grid article,
+.about-page .work-steps article,
+.about-page .why-grid article,
+.about-page .solution-feature,
+.about-page .insight-panel {
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  color: var(--theme-ink);
+  background: var(--about-card);
+  box-shadow: var(--about-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.about-page .coverage-grid article {
+  min-height: 220px;
+  padding: 26px;
+  border-radius: 20px;
+}
+
+.about-page .coverage-grid span {
+  float: right;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: #5148ba;
+  background: rgba(99, 88, 232, 0.1);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about-page .coverage-grid h3,
+.about-page .approach-grid h3,
+.about-page .work-steps h3,
+.about-page .why-grid h3,
+.about-page .solution-feature h3 {
+  color: var(--theme-ink);
+}
+
+.about-page .coverage-grid h3 {
+  margin: 34px 0 8px;
+  font-size: 21px;
+}
+
+.about-page .coverage-grid p,
+.about-page .approach-grid p,
+.about-page .work-steps p,
+.about-page .why-grid p,
+.about-page .solution-feature p,
+.about-page .solution-feature li,
+.about-page .erp-grid p,
+.about-page .insight-panel p {
+  color: var(--theme-muted);
+  line-height: 1.7;
+}
+
+.about-page .approach-grid article,
+.about-page .why-grid article {
+  min-height: 280px;
+  padding: 30px;
+  border-radius: 22px;
+}
+
+.about-page .approach-grid h3,
+.about-page .why-grid h3 {
+  margin: 28px 0 10px;
+  font-size: 20px;
+}
+
+.about-page .solution-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-page .solution-feature {
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  padding: clamp(26px, 3vw, 40px);
+  border-radius: 24px;
+}
+
+.about-page .solution-feature.ai-feature {
+  background:
+    radial-gradient(circle at 88% 0%, rgba(112, 198, 196, 0.24), transparent 34%),
+    rgba(255, 255, 255, 0.78);
+}
+
+.about-page .solution-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.about-page .solution-title small {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--theme-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-page .solution-title h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.about-page .solution-feature ul {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-page .solution-feature li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.about-page .solution-feature li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--theme-primary);
+}
+
+.about-page .solution-feature a {
+  width: max-content;
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: auto;
+  color: var(--theme-primary);
+  font-weight: 800;
+}
+
+.about-page .erp-section {
+  background: linear-gradient(145deg, #fff, #efeff7) !important;
+}
+
+.about-page .erp-grid h2 {
+  color: var(--theme-ink);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.about-page .erp-badges,
+.about-page .industry-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.about-page .erp-badges span,
+.about-page .industry-pills span {
+  padding: 12px 15px;
+  border: 1px solid var(--about-line);
+  border-radius: 999px;
+  color: #5148ba;
+  background: rgba(99, 88, 232, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.about-page .erp-badges span:nth-child(2n),
+.about-page .industry-pills span:nth-child(2n) {
+  color: #347d82;
+  background: rgba(112, 198, 196, 0.14);
+}
+
+.about-page .insight-panel {
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 24px;
+}
+
+.about-page .insight-panel > b {
+  color: var(--theme-ink);
+  font: 800 18px "Manrope", sans-serif;
+}
+
+.about-page .insight-panel article {
+  padding: 18px;
+  border: 1px solid rgba(99, 88, 232, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.about-page .insight-panel span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--theme-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-page .insight-panel p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.about-page .work-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.about-page .work-steps article {
+  position: relative;
+  min-height: 290px;
+  padding: 28px;
+  border-radius: 22px;
+}
+
+.about-page .work-steps article:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  right: -12px;
+  z-index: 2;
+  width: 24px;
+  height: 2px;
+  background: var(--theme-primary);
+}
+
+.about-page .work-steps h3 {
+  margin: 28px 0 10px;
+  font-size: 19px;
+}
+
+.about-page .about-industries .industry-pills {
+  justify-content: center;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1120px) {
+  .about-page .about-hero-grid,
+  .about-page .about-split,
+  .about-page .erp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-system-panel {
+    min-height: 500px;
+  }
+
+  .about-page .coverage-grid,
+  .about-page .work-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-page .work-steps article:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .about-page .about-hero {
+    min-height: auto;
+    padding-top: 108px;
+  }
+
+  .about-page .about-metrics,
+  .about-page .approach-grid,
+  .about-page .why-grid,
+  .about-page .solution-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .solution-feature {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-page .about-hero-copy h1 {
+    font-size: clamp(40px, 12vw, 56px);
+    line-height: 1.04;
+  }
+
+  .about-page .about-system-panel {
+    min-height: 560px;
+  }
+
+  .about-page .about-system-panel::before {
+    inset: 72px 20px;
+  }
+
+  .about-page .about-system-panel::after {
+    inset: 150px 58px;
+  }
+
+  .about-page .system-core {
+    width: 152px;
+    height: 152px;
+  }
+
+  .about-page .system-node {
+    width: calc(100% - 40px);
+  }
+
+  .about-page .node-one,
+  .about-page .node-two,
+  .about-page .node-three,
+  .about-page .node-four {
+    left: 20px;
+    right: auto;
+  }
+
+  .about-page .node-one {
+    top: 24px;
+  }
+
+  .about-page .node-two {
+    top: 122px;
+  }
+
+  .about-page .node-three {
+    bottom: 122px;
+  }
+
+  .about-page .node-four {
+    bottom: 24px;
+  }
+
+  .about-page .coverage-grid,
+  .about-page .work-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-copy,
+  .about-page .coverage-grid article,
+  .about-page .approach-grid article,
+  .about-page .work-steps article,
+  .about-page .why-grid article,
+  .about-page .solution-feature,
+  .about-page .insight-panel {
+    padding: 22px;
+  }
+
+  .about-page .solution-title h3 {
+    font-size: 26px;
+  }
+}
