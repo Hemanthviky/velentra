@@ -529,12 +529,7 @@
   }
 
   body.smart-gate-refresh .gate-login-stage {
-    min-height: 390px;
-  }
-
-  body.smart-gate-refresh .gate-login-card {
-    width: 100%;
-    transform: none;
+    display: none;
   }
 
   body.smart-gate-refresh .gate-trust-grid,

@@ -11,7 +11,8 @@
 
 /* ── Hero ── */
 .smart-gate-hero{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;padding:150px 0 90px;background:linear-gradient(180deg,#fff 0%,#fbfbff 72%,#f4f3fa 100%)}
-.smart-gate-hero:before{content:"";position:absolute;z-index:-1;inset:4% -14% auto 42%;height:75%;border-radius:50%;background:radial-gradient(circle at 55% 45%,rgba(99,88,232,.18),transparent 24%),radial-gradient(circle at 48% 50%,rgba(112,97,232,.22),transparent 54%);filter:blur(35px)}
+.smart-gate-hero:before{content:"";position:absolute;z-index:-1;inset:4% -14% auto 42%;height:75%;border-radius:50%;background:radial-gradient(circle at 55% 45%,rgba(99,88,232,.18),transparent 24%),radial-gradient(circle at 48% 50%,rgba(112,97,232,.22),transparent 54%)}
+.smart-gate-hero:after{content:"";position:absolute;z-index:-1;top:108px;right:0;bottom:34px;width:50vw;border-radius:38px 0 0 38px;background:linear-gradient(90deg,rgba(255,255,255,.58) 0%,rgba(251,251,255,.16) 18%,rgba(17,18,34,.04) 100%),url("../smart-gate-generated-hero.jpeg") center right/cover no-repeat;filter:saturate(1.05) contrast(1.04);opacity:1;transform:none;box-shadow:inset 58px 0 74px rgba(255,255,255,.68),inset 0 -56px 64px rgba(244,243,250,.48),0 30px 78px rgba(29,25,61,.14);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.72) 10%,#000 22%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.72) 10%,#000 22%,#000 100%)}
 .smart-gate-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.9fr);align-items:center;gap:clamp(60px,8vw,145px)}
 .smart-gate-hero-copy{max-width:720px}
 .smart-gate-hero-copy h1{margin:20px 0 13px;color:var(--gate-blue);font-family:"Manrope",sans-serif;font-size:clamp(54px,4vw,92px);font-weight:800;line-height:.99;letter-spacing:-.065em}
@@ -35,6 +36,9 @@
 .login-orbit{position:absolute;border:1px solid rgba(99,88,232,.22);border-radius:50%}.orbit-one{width:570px;height:570px}.orbit-two{width:460px;height:460px}
 .login-float-card{position:absolute;z-index:3;right:-25px;bottom:68px;display:flex;align-items:center;gap:10px;padding:13px 17px;border:1px solid rgba(255,255,255,.8);border-radius:15px;background:rgba(255,255,255,.8);box-shadow:0 18px 38px rgba(43,38,111,.16);backdrop-filter:blur(15px)}
 .login-float-card i{width:11px;height:11px;border-radius:50%;background:#37ae67;box-shadow:0 0 0 6px rgba(55,174,103,.12)}.login-float-card span{display:grid}.login-float-card b{font-size:12px}.login-float-card small{color:#858696;font-size:10px}
+
+.gate-login-stage > *{display:none}
+.gate-login-stage:before{content:none}
 
 /* ── Gate trust grid ── */
 .gate-trust-grid{display:grid;grid-template-columns:repeat(6,1fr);overflow:hidden;border:1px solid rgba(100,90,220,.13);border-radius:22px;background:#fff;box-shadow:0 25px 70px rgba(53,46,130,.1)}
@@ -289,7 +293,7 @@
 @media(max-width:1200px){
   .smart-gate-hero-grid,.dashboard-layout,.digital-pass-layout,.vg-feature-layout,.gate-module-layout,.gate-cta-inner{grid-template-columns:1fr}
   .smart-gate-hero-copy{max-width:800px}
-  .gate-login-stage{min-height:520px}
+  .gate-login-stage{min-height:560px}
   .gate-pillars-grid{grid-template-columns:repeat(2,1fr)}
   .gate-trust-grid,.journey-grid{grid-template-columns:repeat(3,1fr)}
   .gate-trust-grid article{border-bottom:1px solid rgba(100,90,220,.12)}
@@ -301,12 +305,10 @@
 @media(max-width:800px){
   .smart-gate-refresh .section{padding:70px 0}
   .smart-gate-hero{padding:125px 0 70px}
+  .smart-gate-hero:after{top:auto;right:-20vw;bottom:18px;width:100vw;height:300px;border-radius:34px;opacity:.36;filter:saturate(1.04) contrast(1.02);box-shadow:inset 80px 0 90px rgba(255,255,255,.9),inset 0 70px 90px rgba(255,255,255,.84),inset 0 -80px 90px rgba(244,243,250,.88);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%)}
   .smart-gate-hero-grid{grid-template-columns:minmax(0,1fr);gap:35px}
   .smart-gate-hero-copy h1{font-size:clamp(48px,15vw,68px)}
-  .gate-login-stage{min-height:420px}
-  .gate-login-card{width:92%;transform:none}
-  .login-orbit{display:none}
-  .login-float-card{right:0}
+  .gate-login-stage{display:none}
   .gate-pillars-grid{grid-template-columns:1fr 1fr}
   .gate-trust-grid,.journey-grid,.role-grid,.industry-grid{grid-template-columns:1fr 1fr}
   .gm-cards-row{grid-template-columns:1fr}
@@ -327,10 +329,6 @@
   .gate-proof{flex-wrap:wrap}
   .gate-pillars-grid,.gate-trust-grid,.journey-grid,.role-grid,.industry-grid,.gate-benefits ul,.vms-panels{grid-template-columns:1fr}
   .vms-stats{grid-template-columns:1fr 1fr}
-  .gate-login-card{width:100%}
-  .login-content{padding:32px 22px}
-  .login-brand{padding:22px}
-  .login-float-card{display:none}
   .pass-info-card{padding:20px}
   .vg-float-alert{display:none}
 }

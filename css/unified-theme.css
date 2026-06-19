@@ -266,7 +266,6 @@ body.product-v3 .security-list span:nth-child(2n) {
 }
 
 /* Keep feature visuals dark, matching the home-page featured panels. */
-body.product-v3 .gate-login-card,
 body.product-v3 .visitor-pass,
 body.product-v3 .gate-benefits,
 body.product-v3 .vms-dashboard aside {
@@ -274,16 +273,6 @@ body.product-v3 .vms-dashboard aside {
   background:
     radial-gradient(circle at 84% 5%, rgba(141, 130, 238, 0.38), transparent 30%),
     linear-gradient(145deg, #171829, #0d0e1c);
-}
-
-body.product-v3 .gate-login-glow {
-  background: rgba(99, 88, 232, 0.28);
-}
-
-body.product-v3 .login-brand .shield-icon,
-body.product-v3 .login-content button {
-  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark));
-  box-shadow: 0 12px 28px rgba(84, 72, 216, 0.28);
 }
 
 body.product-v3 .vms-stats article {
