@@ -109,12 +109,13 @@ a{
 }
 .brand-logo img{
   position: absolute;
-  width: 168%;
+  width: 100%;
   max-width: none;
-  height: auto;
+  height: 100%;
   left: 50%;
-  top: 49%;
+  top: 50%;
   display: block;
+  object-fit: contain;
   transform: translate(-50%,-50%)
 }
 .footer-brand .brand-logo{

@@ -90,11 +90,8 @@ body.about-page {
   gap: 8px;
   padding: 24px;
   border-radius: 50%;
-  color: #fff;
+  color: #000000;
   text-align: center;
-  background:
-    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.2), transparent 28%),
-    linear-gradient(145deg, #171829, #0d0e1c);
   box-shadow: 0 25px 55px rgba(13, 14, 28, 0.22);
   transform: translate(-50%, -50%);
 }
@@ -111,7 +108,7 @@ body.about-page {
 }
 
 .about-page .system-core small {
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(0, 0, 0, 0.68);
   font-size: 11px;
 }
 
