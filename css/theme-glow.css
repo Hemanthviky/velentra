@@ -1735,6 +1735,9 @@ body.home-page{
   color: #111222;
   font-size: 13px;
 }
+.contact-method-email b{
+  text-transform: lowercase;
+}
 .contact-form{
   padding: clamp(24px, 3vw, 38px);
   border: 1px solid rgba(255, 255, 255, .9);

@@ -141,6 +141,10 @@ body .site-footer.premium-footer .footer-grid a:hover {
   color: #fff
 }
 
+body .site-footer.premium-footer .footer-grid a[href^="mailto:sales@indsys.com"] {
+  text-transform: lowercase
+}
+
 body .site-footer.premium-footer .social-links {
   display: flex;
   gap: 8px;
