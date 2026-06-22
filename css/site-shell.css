@@ -49,7 +49,7 @@ body[class] .site-header.home-header .brand-lockup>span:last-child {
 }
 
 body[class] .site-header.home-header .brand-wordmark {
-  width: clamp(154px, 14vw, 220px);
+  width: clamp(190px, 18vw, 300px);
   height: 42px;
   display: block;
   overflow: hidden;

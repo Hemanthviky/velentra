@@ -880,14 +880,30 @@ body.home-page{
   color: #5549d8;
   background: rgba(99, 88, 232, .12);
 }
-.product-icon svg{
-  width: 31px;
-  height: 31px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.product-highlight .product-icon{
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .7), 0 14px 30px rgba(99, 88, 232, .16);
+}
+.product-highlight .product-icon i{
+  display: block;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 1;
+}
+.product-icon-id{
+  color: #5549d8;
+  background: linear-gradient(145deg, rgba(99, 88, 232, .16), rgba(88, 181, 189, .13));
+}
+.product-icon-gate{
+  color: #fff;
+  background: rgba(255, 255, 255, .16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .24), 0 14px 34px rgba(0, 0, 0, .22);
+}
+.product-icon-people{
+  color: #58a1ad;
+  background: linear-gradient(145deg, rgba(88, 181, 189, .16), rgba(99, 88, 232, .12));
 }
 .product-highlight > span,
 .product-link,
@@ -1097,6 +1113,15 @@ body.home-page{
   font-size: 12px;
   letter-spacing: .08em;
 }
+.phone-brand{
+  display: flex;
+  align-items: center;
+}
+.phone-brand img{
+  width: 92px;
+  height: auto;
+  display: block;
+}
 .phone-brand b{
   color: var(--purple);
   margin-right: 2px;
@@ -1295,7 +1320,7 @@ body.home-page{
   max-width: 760px;
   margin: 20px 0;
   color: #111222;
-  font-size: clamp(52px, 5.8vw, 88px);
+  font-size: clamp(52px, 4.8vw, 88px);
   line-height: .98;
   letter-spacing: -.07em;
 }
