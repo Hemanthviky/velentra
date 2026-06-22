@@ -1113,15 +1113,6 @@ body.home-page{
   font-size: 12px;
   letter-spacing: .08em;
 }
-.phone-brand{
-  display: flex;
-  align-items: center;
-}
-.phone-brand img{
-  width: 92px;
-  height: auto;
-  display: block;
-}
 .phone-brand b{
   color: var(--purple);
   margin-right: 2px;

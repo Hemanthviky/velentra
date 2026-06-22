@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script>window.tailwind = window.tailwind || {}; tailwind.config = { corePlugins: { preflight: false } };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/product-theme.css">
@@ -16,9 +18,8 @@
   <link rel="stylesheet" href="css/site-shell.css">
   <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body class="product-v3 gate-page smart-gate-refresh">
+<body class="product-v3 gate-page smart-gate-refresh antialiased overflow-x-hidden">
   <header class="site-header home-header">
-    <a class="brand brand-lockup" href="index.html" aria-label="Velantra home"><span class="brand-wordmark"><img src="Velentra-logo-text.png" alt="Velantra Business Management Platform"></span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="smart-id.html">Smart-ID</a><a class="active" href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a><a class="button button-small button-primary" href="index.html#contact">Contact</a></nav>
   </header>
@@ -81,7 +82,7 @@
           <a class="button button-primary" href="index.html#contact">Explore Dashboard <b>&rarr;</b></a>
         </div>
         <div class="vms-dashboard reveal delay-1">
-          <aside><b>VELANTRA<small>SMART GATE</small></b><span class="active">Dashboard</span><span>Visitor Requests</span><span>Visitor List</span><span>Visitor Pass</span><span>Gate Control</span><span>Reports</span></aside>
+          <aside><b><small>SMART GATE</small></b><span class="active">Dashboard</span><span>Visitor Requests</span><span>Visitor List</span><span>Visitor Pass</span><span>Gate Control</span><span>Reports</span></aside>
           <div class="vms-workspace">
             <header><b>Dashboard</b><span>Search menus, pages...</span><i>Administrator</i></header>
             <div class="vms-stats"><article><small>Awaiting Approval</small><b>08</b><em>Review</em></article><article><small>Total Visitors</small><b>126</b><em>Today</em></article><article><small>Awaiting Today</small><b>10</b><em>Expected</em></article><article><small>On Premises</small><b>18</b><em>Live</em></article><article><small>Overstayed</small><b>02</b><em>Alert</em></article></div>
@@ -98,7 +99,7 @@
         <div class="pass-visual reveal">
           <div class="pass-cards-row">
             <div class="visitor-pass">
-              <div class="visitor-pass-top"><span>VELANTRA</span><small>DAILY ACCESS</small><b>VP-3026-00009</b><em>Nag******</em></div>
+              <div class="visitor-pass-top"><small>DAILY ACCESS</small><b>VP-3026-00009</b><em>Nag******</em></div>
               <div class="visitor-pass-detail"><span><small>Time slot</small><b>08:30 AM<br>06:30 PM</b></span><span><small>Valid from</small><b>12 Jun 2024</b></span><span><small>Valid to</small><b>13 Jun 2024</b></span></div>
               <div class="qr-code" aria-label="QR code placeholder"></div>
               <strong>SHOW ME</strong>
@@ -167,7 +168,7 @@
         <div class="gate-module-visual reveal delay-1">
           <div class="gm-cards-row">
             <div class="gm-card materials-theme">
-              <div class="gmc-top"><span>VELANTRA</span><small>Materials Gate Pass</small><b>MGP-2024-00047</b></div>
+              <div class="gmc-top"><small>Materials Gate Pass</small><b>MGP-2024-00047</b></div>
               <div class="gmc-body">
                 <div class="gmc-row"><small>Material</small><b>Steel Rods — 200 Units</b></div>
                 <div class="gmc-row"><small>Movement</small><b>Inward Delivery</b></div>
@@ -193,7 +194,7 @@
         <div class="gate-module-visual reveal">
           <div class="gm-cards-row">
             <div class="gm-card vehicles-theme">
-              <div class="gmc-top"><span>VELANTRA</span><small>Vehicle Entry Record</small><b>VER-2024-00183</b></div>
+              <div class="gmc-top"><small>Vehicle Entry Record</small><b>VER-2024-00183</b></div>
               <div class="gmc-vehicle-badge"><span>🚛</span><div><b>TN-01-AB-56**</b><small>Heavy Goods Vehicle</small></div></div>
               <div class="gmc-body">
                 <div class="gmc-row"><small>Driver</small><b>Su**** Ba**</b></div>
@@ -251,7 +252,7 @@
         <div class="gate-module-visual reveal delay-1">
           <div class="gm-cards-row">
             <div class="gm-card contractors-theme">
-              <div class="gmc-top"><span>VELANTRA</span><small>Contractor Pass</small><b>CP-2024-00034</b></div>
+              <div class="gmc-top"><small>Contractor Pass</small><b>CP-2024-00034</b></div>
               <div class="gmc-body">
                 <div class="gmc-row"><small>Contractor</small><b>Rajan Electricals</b></div>
                 <div class="gmc-row"><small>Work Order</small><b>WO-2024-00451</b></div>
@@ -307,7 +308,7 @@
 
   <footer class="site-footer premium-footer">
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span><span>Velantra</span></a><p>Velantra helps businesses digitize Employee, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span></a><p>Velantra helps businesses digitize Employee, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
       <div><b>Products</b><a href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a></div>
       <div><b>Company</b><a href="about.html">About Us</a><a href="index.html#contact">Contact</a><a href="index.html#faq">Resources</a></div>
       <div><b>Contact</b><a href="https://wa.me/916374326329" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:sales@indsys.com">sales@indsys.com</a></div>

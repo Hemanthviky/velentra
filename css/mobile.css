@@ -758,3 +758,314 @@
     min-height: 465px;
   }
 }
+
+/* Tailwind-backed responsive normalization loaded after every page theme. */
+:root {
+  --site-gutter: clamp(16px, 3vw, 48px);
+  --site-section-y: clamp(58px, 7vw, 112px);
+  --site-card-radius: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+}
+
+body .container,
+body.home-page .container,
+body.product-v3 .container,
+body .site-footer.premium-footer .container {
+  width: min(100% - calc(var(--site-gutter) * 2), 1280px);
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+body :where(.home-cta .container, .page-cta .container, .people-closing-cta .container, .site-footer.premium-footer .container) {
+  width: min(100% - calc(var(--site-gutter) * 2), 1280px);
+  max-width: 1280px;
+}
+
+body img,
+body svg,
+body canvas,
+body video {
+  max-width: 100%;
+}
+
+body img {
+  height: auto;
+}
+
+body main,
+body section {
+  width: 100%;
+}
+
+body section,
+body .section,
+body .home-section {
+  scroll-margin-top: 88px;
+}
+
+body .section,
+body .home-section {
+  padding-block: var(--site-section-y);
+}
+
+body :where(p, li, dd, figcaption, small, a, button) {
+  overflow-wrap: anywhere;
+}
+
+body :where(.button, button, input, select, textarea) {
+  max-width: 100%;
+}
+
+body :where(.platform-hero-grid, .about-hero-grid, .smart-id-hero-grid, .smart-gate-hero-grid, .inner-hero-grid, .dashboard-layout, .digital-pass-layout, .gate-benefits-layout, .analytics-showcase-grid, .modules-layout, .security-grid, .home-cta .container, .people-closing-cta .container, .footer-grid) {
+  min-width: 0;
+}
+
+body :where(.platform-copy, .about-hero-copy, .smart-id-hero-copy, .smart-gate-hero-copy, .people-hero-copy, .dashboard-copy, .digital-pass-copy, .section-heading, .home-heading) {
+  min-width: 0;
+}
+
+body :where(.product-highlight, .feature-card, .gate-pillar-card, .solution-feature, .smart-feature-grid article, .people-module-card, .people-trust-card, .people-why-card, .faq-list details) {
+  border-radius: min(var(--site-card-radius), 20px);
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --site-gutter: clamp(18px, 3vw, 36px);
+  }
+
+  body :where(.platform-hero-grid, .about-hero-grid, .smart-id-hero-grid, .smart-gate-hero-grid, .inner-hero-grid, .dashboard-layout, .digital-pass-layout, .gate-benefits-layout, .analytics-showcase-grid, .modules-layout, .security-grid, .home-cta .container, .people-closing-cta .container) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 56px);
+  }
+
+  body.home-page .hero-showcase,
+  body.home-page .what-orbit-clip,
+  body.product-v3 .people-visual,
+  body.product-v3 .smart-id-phone-stage,
+  body.product-v3 .gate-login-stage,
+  body.product-v3 .vms-dashboard,
+  body.product-v3 .pass-visual {
+    width: min(100%, 760px);
+    margin-inline: auto;
+  }
+
+  body.home-page .platform-copy,
+  body.product-v3 :where(.about-hero-copy, .smart-id-hero-copy, .smart-gate-hero-copy, .people-hero-copy) {
+    max-width: 760px;
+  }
+
+  body :where(.about-metrics, .solution-grid, .coverage-grid, .approach-grid, .why-grid, .industry-grid, .people-trust-grid, .people-why-grid, .role-grid, .gate-pillars-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --site-section-y: clamp(52px, 8vw, 84px);
+  }
+
+  body .site-header.home-header,
+  body .site-header.home-header.is-scrolled,
+  body .site-header {
+    height: 72px;
+    padding-inline: clamp(14px, 4vw, 24px);
+  }
+
+  body .site-header.home-header .brand-wordmark {
+    width: clamp(164px, 45vw, 240px);
+  }
+
+  body .site-header .main-nav {
+    max-height: calc(100svh - 88px);
+    overflow-y: auto;
+  }
+
+  body :where(.product-highlight-grid, .smart-feature-grid, .people-module-grid, .gate-pillars-grid, .vms-stats, .vms-panels, .smart-benefit-grid, .people-feature-grid, .people-trust-grid, .people-why-grid, .role-grid, .industry-grid, .coverage-grid, .approach-grid, .why-grid, .solution-grid, .about-metrics, .footer-grid) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.home-page .hero-showcase {
+    display: none;
+  }
+
+  body.home-page .platform-hero,
+  body.product-v3 :where(.about-hero, .smart-id-hero, .smart-gate-hero, .people-hero, .inner-hero) {
+    min-height: auto;
+    padding-top: 108px;
+  }
+
+  body :where(.hero-actions, .platform-actions, .smart-id-cta-actions, .gate-cta-actions, .people-cta-actions) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  body :where(.hero-actions, .platform-actions, .smart-id-cta-actions, .gate-cta-actions, .people-cta-actions) .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  body .subnav {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  body .subnav::-webkit-scrollbar {
+    display: none;
+  }
+
+  body .subnav .container {
+    width: max-content;
+    min-width: 100%;
+    padding-inline: var(--site-gutter);
+  }
+
+  body .subnav a {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --site-gutter: 16px;
+    --site-section-y: 58px;
+  }
+
+  body :where(h1, h2, h3) {
+    letter-spacing: 0;
+  }
+
+  body.home-page .platform-copy h1,
+  body.product-v3 :where(.about-hero-copy h1, .smart-id-hero-copy h1, .smart-gate-hero-copy h1, .people-hero h1, .inner-hero h1) {
+    max-width: 12ch;
+    font-size: clamp(38px, 12vw, 56px);
+    line-height: 1.02;
+  }
+
+  body :where(.home-heading h2, .section-heading h2, .insights-copy h2, .people-section-heading h2) {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.08;
+  }
+
+  body.home-page .products-section .container {
+    width: 100%;
+  }
+
+  body.home-page .products-section .home-heading {
+    width: min(100% - 32px, 640px);
+  }
+
+  body.home-page .product-highlight-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 12px;
+    padding-inline: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  body.home-page .product-highlight-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.home-page .product-highlight {
+    width: calc(100vw - 48px);
+    min-width: calc(100vw - 48px);
+    flex: 0 0 calc(100vw - 48px);
+    scroll-snap-align: center;
+  }
+
+  body.product-v3 :where(.smart-real-phone, .executive-dashboard, .vms-dashboard, .pass-cards-row, .visitor-pass, .pass-info-card) {
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  body.product-v3 :where(.gate-login-stage, .smart-id-phone-stage, .people-visual, .analytics-preview, .pass-visual) {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --site-gutter: 12px;
+    --site-section-y: 48px;
+  }
+
+  body .site-header.home-header .brand-wordmark {
+    width: min(56vw, 190px);
+  }
+
+  body.home-page .platform-copy h1,
+  body.product-v3 :where(.about-hero-copy h1, .smart-id-hero-copy h1, .smart-gate-hero-copy h1, .people-hero h1, .inner-hero h1) {
+    font-size: clamp(34px, 11vw, 46px);
+  }
+
+  body :where(.product-highlight, .feature-card, .gate-pillar-card, .solution-feature, .smart-feature-grid article, .people-module-card, .people-trust-card, .people-why-card, .module-panel, .industry-panel, .fingerprint-card) {
+    padding: 20px;
+  }
+
+  body.home-page .product-highlight {
+    width: calc(100vw - 32px);
+    min-width: calc(100vw - 32px);
+    flex-basis: calc(100vw - 32px);
+  }
+
+  body .site-footer.premium-footer .footer-grid {
+    gap: 28px;
+  }
+}
+
+/* Keep the home hero headline as three intentional lines on every screen. */
+body.home-page .platform-copy h1 {
+  max-width: none;
+}
+
+body.home-page .platform-copy h1 > span {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  body.home-page .platform-copy h1 {
+    font-size: clamp(31px, 10vw, 46px);
+  }
+}
+
+/* Center non-home page navigation after removing the logo lockup. */
+body.product-v3 .site-header.home-header {
+  justify-content: center;
+}
+
+body.product-v3 .site-header.home-header .main-nav {
+  margin-inline: auto;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  body.product-v3 .site-header.home-header {
+    justify-content: flex-end;
+  }
+
+  body.product-v3 .site-header.home-header .main-nav {
+    margin-inline: 0;
+  }
+}
