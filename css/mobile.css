@@ -1181,12 +1181,17 @@ body.product-v3 .site-header.home-header .main-nav {
     max-height: calc(100svh - 96px);
     margin: 0;
     padding: 10px;
+    display: none;
     gap: 4px !important;
     overflow-y: auto;
     white-space: normal;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+  }
+
+  body[class] .site-header.home-header .main-nav.open {
+    display: flex;
   }
 
   body[class] .site-header.home-header .main-nav a,
