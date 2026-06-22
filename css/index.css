@@ -142,7 +142,7 @@
   border-radius: 50%;
   color: #148a59;
   background: #e0f6eb;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
 }
 .saas-scene {
@@ -179,7 +179,7 @@
   border-bottom: 1px solid #dce6f3;
   background: #fff;
   color: #29466d;
-  font-size: 8px;
+  font-size: 10px;
 }
 .scene-window-top > span {
   display: flex;
@@ -437,7 +437,7 @@
   border-radius: 50%;
   color: #158a59;
   background: #dff6ea;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
 }
 .scene-float span,
@@ -447,7 +447,7 @@
 }
 .scene-float b {
   color: #071d55;
-  font-size: 8px;
+  font-size: 10px;
 }
 .scene-float small {
   color: #7b8ba0;
@@ -567,7 +567,7 @@
 }
 .product-highlight > span {
   color: #0962ed;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -678,7 +678,7 @@
 }
 .benefit-grid small {
   color: #78899f;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
 }
 .orbit-system {
@@ -828,7 +828,7 @@
   justify-content: space-between;
   padding: 5px 3px 19px;
   color: #b9c9df;
-  font-size: 8px;
+  font-size: 10px;
 }
 .insight-top span {
   display: flex;
@@ -919,7 +919,7 @@
 }
 .insights-copy small {
   color: #91a3bb;
-  font-size: 9px;
+  font-size: 10px;
 }
 .faq-section {
   background: #f5f8fd;
@@ -1658,7 +1658,7 @@
 }
 .scene-people-card p b {
   color: #071d55;
-  font-size: 8px;
+  font-size: 10px;
 }
 .scene-people-card p small {
   color: #8190a5;
@@ -1712,7 +1712,7 @@
     display: none;
   }
   .scene-people-card em strong {
-    font-size: 9px;
+    font-size: 10px;
   }
   .scene-pass {
     bottom: 0;
@@ -1903,14 +1903,14 @@
 }
 .intelligence-top small {
   color: #8493a7;
-  font-size: 9px;
+  font-size: 10px;
 }
 .intelligence-top em {
   padding: 6px 9px;
   border-radius: 15px;
   color: #14895a;
   background: #e2f7ed;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
 }
@@ -1933,7 +1933,7 @@
   align-items: center;
   gap: 7px;
   color: #657993;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
 }
 .intelligence-kpis article > span i {
@@ -1954,7 +1954,7 @@
 }
 .intelligence-kpis article > small {
   color: #657993;
-  font-size: 9px;
+  font-size: 10px;
 }
 .intelligence-kpis article > em {
   margin-top: 10px;
@@ -2005,11 +2005,11 @@
 }
 .intelligence-chart header small {
   color: #8493a7;
-  font-size: 8px;
+  font-size: 10px;
 }
 .intelligence-chart header em {
   color: #14895a;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 800;
 }
@@ -2090,7 +2090,7 @@
 }
 .intelligence-activity > div b {
   color: #294668;
-  font-size: 8px;
+  font-size: 10px;
 }
 .intelligence-activity > div small {
   color: #8493a7;

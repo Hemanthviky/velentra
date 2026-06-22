@@ -283,11 +283,16 @@
   backdrop-filter: blur(15px);
 }
 .login-float-card i {
-  width: 11px;
-  height: 11px;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
-  background: #37ae67;
-  box-shadow: 0 0 0 6px rgba(55, 174, 103, 0.12);
+  color: #37ae67;
+  background: rgba(55, 174, 103, 0.12);
+  box-shadow: 0 0 0 5px rgba(55, 174, 103, 0.12);
+  font-size: 12px;
+  font-style: normal;
 }
 .login-float-card span {
   display: grid;
@@ -547,7 +552,7 @@
   display: grid;
   place-items: center;
   color: #fff;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 900;
 }
 .vg-tl-item.active .vg-tl-dot {
@@ -757,7 +762,7 @@
   display: block;
   margin-top: 4px;
   color: #8d82ee;
-  font-size: 6px;
+  font-size: 12px;
 }
 .vms-dashboard aside span {
   padding: 10px;
@@ -790,10 +795,17 @@
   border-radius: 7px;
   color: #92929e;
   background: #3b3b43;
-  font-size: 8px;
+  font-size: 10px;
 }
 .vms-workspace header i {
-  font-size: 8px;
+  margin-right: 4px;
+  font-size: 10px;
+  font-style: normal;
+}
+.vms-workspace header .admin-user {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
   font-style: normal;
 }
 .vms-stats {
@@ -840,13 +852,13 @@
 }
 .vms-panels b {
   color: #34364d;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .vms-panels span {
   align-self: center;
   color: #9a9baa;
-  font-size: 9px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -976,12 +988,16 @@
   font-weight: 700;
 }
 .pass-qr-status i {
-  display: block;
-  width: 7px;
-  height: 7px;
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #51d68a;
+  color: #51d68a;
+  background: rgba(81, 214, 138, 0.16);
   box-shadow: 0 0 0 4px rgba(81, 214, 138, 0.2);
+  font-size: 10px;
+  font-style: normal;
 }
 .pass-qr-gate {
   display: grid;
@@ -994,7 +1010,7 @@
 }
 .pass-qr-gate span {
   color: #9091a8;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -1072,7 +1088,7 @@
 .visitor-pass-top small {
   margin: 21px 0 6px;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 8px;
+  font-size: 10px;
 }
 .visitor-pass-top b {
   font-size: 13px;
@@ -1095,11 +1111,11 @@
 }
 .visitor-pass-detail small {
   color: rgba(255, 255, 255, 0.55);
-  font-size: 6px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .visitor-pass-detail b {
-  font-size: 8px;
+  font-size: 10px;
 }
 .qr-code {
   width: 88px;
@@ -1113,7 +1129,7 @@
   display: block;
   padding: 0 0 24px;
   text-align: center;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.18em;
 }
 .pass-info-card {
@@ -1125,7 +1141,7 @@
 }
 .pass-info-card > small {
   color: #8c8e9e;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .pass-info-card h3 {
@@ -1144,13 +1160,13 @@
 }
 .pass-info-card dt {
   color: #999baa;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .pass-info-card dd {
   margin: 0;
   color: #36384e;
-  font-size: 9px;
+  font-size: 10px;
 }
 .pass-timeline {
   display: grid;
@@ -1166,7 +1182,7 @@
   position: relative;
   padding-left: 16px;
   color: #656779;
-  font-size: 9px;
+  font-size: 10px;
 }
 .pass-timeline span:before {
   content: "";
@@ -1293,7 +1309,7 @@
 .gmc-top small {
   margin: 14px 0 5px;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 7px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1319,7 +1335,7 @@
 }
 .gmc-vehicle-badge div small {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 9px;
+  font-size: 10px;
 }
 .gmc-body {
   padding: 2px 16px 6px;
@@ -1336,7 +1352,7 @@
 }
 .gmc-row small {
   color: rgba(255, 255, 255, 0.42);
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -1353,7 +1369,7 @@
 }
 .gmc-status-bar > span:last-child {
   color: rgba(255, 255, 255, 0.42);
-  font-size: 9px;
+  font-size: 10px;
 }
 .gmc-chip {
   display: inline-flex;
@@ -1361,7 +1377,7 @@
   gap: 5px;
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
 }
 .gmc-approved {
@@ -1399,7 +1415,7 @@
 }
 .gm-info-card > small {
   color: #8c8e9e;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .gm-info-card h3 {
@@ -1418,13 +1434,13 @@
 }
 .gm-info-card dt {
   color: #999baa;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .gm-info-card dd {
   margin: 0;
   color: #36384e;
-  font-size: 9px;
+  font-size: 10px;
 }
 .gm-steps {
   display: grid;
@@ -1441,7 +1457,7 @@
   position: relative;
   padding-left: 14px;
   color: #656779;
-  font-size: 9px;
+  font-size: 10px;
 }
 .gm-steps span:before {
   content: "";
@@ -1492,7 +1508,7 @@
 .gm-qr-chip {
   padding: 5px 11px;
   border-radius: 20px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
 }
 .mat-chip {

@@ -285,7 +285,7 @@
 .screen-label {
   margin: 22px 0 12px;
   color: #d5daf2;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
@@ -312,7 +312,7 @@
 }
 .leave-balance span,
 .leave-balance small {
-  font-size: 8px;
+  font-size: 10px;
 }
 .apply-leave {
   margin-top: 20px;
@@ -352,7 +352,7 @@
   gap: 2px;
 }
 .request-list b {
-  font-size: 9px;
+  font-size: 10px;
 }
 .request-list small {
   color: #a9b1d4;
@@ -416,7 +416,7 @@
   margin-bottom: 14px;
 }
 .calendar-days.head b {
-  font-size: 8px;
+  font-size: 10px;
 }
 .calendar-days.dates i {
   position: relative;
@@ -617,7 +617,7 @@
 }
 .phone-float span {
   color: #73778a;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.4;
 }
 .phone-float-one {
@@ -860,6 +860,7 @@
   color: #a99bff;
   font-style: normal;
   font-weight: 800;
+  font-size: 25px;
 }
 .smart-benefit-grid h3 {
   margin: 25px 0 8px;
@@ -1047,7 +1048,7 @@
 }
 .companion-code-phone .profile-screen dt,
 .companion-code-phone .profile-screen dd {
-  font-size: 8px;
+  font-size: 10px;
 }
 .companion-code-phone .profile-actions {
   gap: 10px;
@@ -1193,7 +1194,7 @@
     height: 36px;
     flex: 0 0 36px;
     box-shadow: 0 0 0 5px #f8f8fb;
-    font-size: 9px;
+    font-size: 10px;
   }
   .smart-companion .companion-points span:after,
   .smart-companion .companion-points span:nth-child(2n):after,

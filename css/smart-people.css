@@ -24,7 +24,7 @@
   border-radius: 20px;
   color: #60728d;
   background: #fff;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
 }
 .people-visual {
@@ -51,7 +51,7 @@
   border-bottom: 1px solid #e0e6f2;
   background: #fff;
   color: #233a61;
-  font-size: 8px;
+  font-size: 10px;
 }
 .people-top span {
   display: flex;
@@ -60,10 +60,15 @@
   color: #178859;
 }
 .people-top i {
-  width: 6px;
-  height: 6px;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
-  background: #4fd99b;
+  color: #178859;
+  background: rgba(79, 217, 155, 0.16);
+  font-size: 10px;
+  font-style: normal;
 }
 .people-kpis {
   display: grid;
@@ -197,7 +202,7 @@
   border-radius: 13px;
   color: #6558dc;
   background: #eeecff;
-  font-size: 9px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 800;
 }
@@ -239,7 +244,7 @@
 }
 .benefit-score > span {
   color: #a8bad1;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .benefit-score > b {
@@ -249,7 +254,7 @@
 }
 .benefit-score > small {
   color: #63dfa5;
-  font-size: 8px;
+  font-size: 10px;
 }
 .benefit-score > div {
   height: 8px;
@@ -270,7 +275,7 @@
   margin: 0;
   border-top: 1px solid #29415f;
   color: #a9b9ce;
-  font-size: 9px;
+  font-size: 10px;
 }
 .benefit-score strong {
   color: #fff;
@@ -579,7 +584,7 @@
 .executive-list strong {
   grid-column: 2;
   color: #6558dc;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .people-page .section-heading.centered {
@@ -783,7 +788,7 @@
   position: absolute;
   bottom: -26px;
   color: #77798c;
-  font-size: 8px;
+  font-size: 10px;
 }
 .chart-legend {
   position: absolute;
@@ -795,7 +800,7 @@
   justify-content: center;
   gap: 14px;
   color: #77798c;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800;
 }
 .chart-legend span {
@@ -886,7 +891,7 @@
 .executive-donut small {
   transform: translateY(18px);
   color: #77798c;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800;
 }
 .executive-bars {
@@ -902,7 +907,7 @@
 .executive-bars b,
 .executive-bars em {
   color: #686b7b;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 800;
 }
@@ -1083,7 +1088,7 @@
 }
 .people-why-grid i {
   color: #6558dc;
-  font-size: 11px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
 }
@@ -1326,5 +1331,84 @@
   }
   .executive-bars em {
     text-align: left;
+  }
+}
+
+/* Match Smart-Gate page typography scale */
+.people-page .home-header .main-nav {
+  font-size: 15px !important;
+}
+
+.people-page .section {
+  padding: clamp(82px, 8vw, 130px) 0 !important;
+}
+
+.people-page .people-hero h1 {
+  font-size: clamp(54px, 4vw, 92px) !important;
+  line-height: 0.99;
+}
+
+.people-page .people-hero h2 {
+  font-size: clamp(21px, 2vw, 31px) !important;
+}
+
+.people-page .people-hero p,
+.people-page .section-heading p,
+.people-page .analytics-showcase header p,
+.people-page .people-closing-cta p {
+  font-size: 17px !important;
+  line-height: 1.75;
+}
+
+.people-page .people-label {
+  font-size: 13px !important;
+}
+
+.people-page .section-heading h2 {
+  font-size: clamp(34px, 4vw, 58px) !important;
+}
+
+.people-page .people-trust-grid h3,
+.people-page .people-module-grid h3,
+.people-page .people-why-grid h3 {
+  font-size: 18px !important;
+  line-height: 1.3;
+}
+
+.people-page .people-module-grid p,
+.people-page .people-why-grid p {
+  font-size: 14px !important;
+  line-height: 1.65;
+}
+
+.people-page .analytics-showcase h2 {
+  font-size: clamp(24px, 2vw, 31px) !important;
+  line-height: 1.15;
+}
+
+.people-page .people-closing-cta span {
+  font-size: 13px !important;
+}
+
+.people-page .people-closing-cta h2 {
+  font-size: clamp(32px, 3.8vw, 52px) !important;
+  line-height: 1.08;
+}
+
+.people-page .people-closing-cta .people-cta-actions .button {
+  font-size: 15px !important;
+}
+
+@media (max-width: 700px) {
+  .people-page .people-hero h1 {
+    font-size: clamp(48px, 15vw, 68px) !important;
+  }
+
+  .people-page .people-hero h2 {
+    font-size: clamp(21px, 7vw, 31px) !important;
+  }
+
+  .people-page .section-heading h2 {
+    font-size: clamp(34px, 10vw, 46px) !important;
   }
 }

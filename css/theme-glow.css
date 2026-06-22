@@ -1207,7 +1207,7 @@ body.home-page{
   stroke-width: 1.8;
 }
 .quick-grid small{
-  font-size: 9px;
+  font-size: 10px;
   color: rgba(255, 255, 255, .6);
 }
 .phone-nav{
@@ -1583,7 +1583,7 @@ body.home-page{
   display: block;
   color: #596d8d;
   font-family: "DM Sans", sans-serif;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: .2em;
@@ -1741,7 +1741,7 @@ body.home-page{
 }
 .contact-details small{
   color: #777a8d;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -1771,7 +1771,7 @@ body.home-page{
 }
 .contact-form-head span{
   color: #6358e8;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -1846,7 +1846,7 @@ body.home-page{
   display: block;
   margin-top: 12px;
   color: #8b8e9d;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
 }
 @media (max-width: 1050px){

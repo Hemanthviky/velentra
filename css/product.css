@@ -472,7 +472,7 @@
 }
 .smart-page #features .feature-card>span{
   color: #71839b;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: .12em
 }
 .smart-page #features .feature-card h3{
@@ -628,7 +628,7 @@
   border-radius: 50%;
   color: #0962ed;
   background: #e7f0ff;
-  font-size: 9px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 800
 }
@@ -655,7 +655,7 @@
 }
 .capability-list em{
   color: #8999ae;
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: .09em;
@@ -714,7 +714,7 @@
     display: none
   }
   .capability-list small{
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1.5
   }
   .capability-demo{

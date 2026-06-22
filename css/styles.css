@@ -311,7 +311,7 @@ a{
   place-items: center;
   background: #154da6;
   border: 2px solid var(--navy);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700
 }
 .avatar-stack span:first-child{
@@ -374,7 +374,7 @@ a{
   box-shadow: 0 0 0 5px rgba(73, 211, 138, .12)
 }
 .check-icon{
-  font-size: 8px;
+  font-size: 10px;
   color: #fff;
   background: var(--blue);
   padding: 5px;
@@ -503,7 +503,7 @@ a{
   margin: 22px 0
 }
 .chip-list span{
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   color: #53647c;
   background: #fff;
@@ -567,7 +567,7 @@ a{
 .app-top{
   display: flex;
   justify-content: space-between;
-  font-size: 8px;
+  font-size: 10px;
   margin-bottom: 12px
 }
 .id-card-mini{
@@ -755,7 +755,7 @@ a{
 .mobile-header{
   display: flex;
   justify-content: space-between;
-  font-size: 9px;
+  font-size: 10px;
   color: #697a91
 }
 .welcome-card{
@@ -768,7 +768,7 @@ a{
   flex-direction: column
 }
 .welcome-card small{
-  font-size: 8px;
+  font-size: 10px;
   opacity: .7
 }
 .welcome-card strong{
@@ -781,7 +781,7 @@ a{
   border: 0;
   border-radius: 7px;
   padding: 9px;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700
 }
 .mini-grid{
@@ -1195,7 +1195,7 @@ a{
   display: flex;
   flex-direction: column;
   gap: 7px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   margin-bottom: 13px
 }
@@ -1332,7 +1332,7 @@ a{
   border-top: 1px solid #1a2941;
   margin-top: 50px;
   padding-top: 22px;
-  font-size: 8px;
+  font-size: 10px;
   color: #718199
 }
 .reveal{
@@ -1441,7 +1441,7 @@ a{
   margin-bottom: 6px
 }
 .outcome-strip span{
-  font-size: 9px;
+  font-size: 10px;
   color: var(--muted)
 }
 .feature-showcase{
@@ -1481,7 +1481,7 @@ a{
   color: var(--muted)
 }
 .feature-card span{
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   color: var(--blue);
   text-transform: uppercase;
@@ -1608,7 +1608,7 @@ a{
     width: min(100% - 28px, 1280px)
   }
   .top-strip{
-    font-size: 8px;
+    font-size: 10px;
     height: 28px
   }
   .site-header{

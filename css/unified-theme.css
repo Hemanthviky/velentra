@@ -355,7 +355,7 @@ body.product-v3 .people-closing-cta p {
 body.product-v3 .gate-page-cta .button,
 body.product-v3 .people-closing-cta .people-cta-actions .button:first-child {
   color: #fff !important;
-  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark)) !important;
+  background: radial-gradient(circle at 80% 0%, rgba(99, 88, 232, .25), transparent 35%), #0d0e1c !important;
 }
 
 body.product-v3 .people-closing-cta .people-cta-actions .button:last-child {

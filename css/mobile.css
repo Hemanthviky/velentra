@@ -497,7 +497,7 @@
     color: var(--capability-accent);
     background: transparent;
     box-shadow: none;
-    font-size: 9px;
+    font-size: 10px;
   }
 
   body.smart-id-refresh .smart-companion .companion-points span::after {

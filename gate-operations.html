@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <script>window.tailwind = window.tailwind || {}; tailwind.config = { corePlugins: { preflight: false } };</script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/product-theme.css">
@@ -37,11 +38,11 @@
         <div class="gate-login-stage reveal delay-1">
           <div class="gate-login-glow"></div>
           <div class="gate-login-card">
-            <div class="login-brand"><span class="shield-icon">◆</span><span><b>Velantra VMS</b><small>Visitor Management System</small></span></div>
+            <div class="login-brand"><span class="shield-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></span><span><b>Velantra VMS</b><small>Visitor Management System</small></span></div>
             <div class="login-content"><h3>Welcome.</h3><p>Enter your email to verify your identity and begin the registration process.</p><label>Email address<input type="email" value="you@company.com" readonly></label><button type="button">Send OTP</button></div>
           </div>
           <span class="login-orbit orbit-one"></span><span class="login-orbit orbit-two"></span>
-          <div class="login-float-card"><i></i><span><b>Visitor verified</b><small>Digital pass ready</small></span></div>
+          <div class="login-float-card"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span><b>Visitor verified</b><small>Digital pass ready</small></span></div>
         </div>
       </div>
     </section>
@@ -52,19 +53,19 @@
         <div class="section-heading centered reveal"><div class="eyebrow"><span></span> What SmartGate manages</div><h2>One Platform for Every Gate Movement.</h2><p>SmartGate brings visitors, materials, vehicles, and contractors under one intelligent control layer — every movement tracked, documented, and secured.</p></div>
         <div class="gate-pillars-grid reveal">
           <article class="gate-pillar-card pillar-visitors">
-            <div class="pillar-icon-wrap"><i>👤</i><span class="pillar-num">01</span></div>
+            <div class="pillar-icon-wrap"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="pillar-num">01</span></div>
             <div class="pillar-content"><h3>Visitors</h3><p>Digital registration, host approval, and verified entry — every visitor accounted for, every time.</p></div>
           </article>
           <article class="gate-pillar-card pillar-materials">
-            <div class="pillar-icon-wrap"><i>📦</i><span class="pillar-num">02</span></div>
+            <div class="pillar-icon-wrap"><i class="bi bi-box-seam" aria-hidden="true"></i><span class="pillar-num">02</span></div>
             <div class="pillar-content"><h3>Materials</h3><p>Track every item that enters or leaves your facility — inward delivery or outward dispatch, fully documented.</p></div>
           </article>
           <article class="gate-pillar-card pillar-vehicles">
-            <div class="pillar-icon-wrap"><i>🚛</i><span class="pillar-num">03</span></div>
+            <div class="pillar-icon-wrap"><i class="bi bi-truck" aria-hidden="true"></i><span class="pillar-num">03</span></div>
             <div class="pillar-content"><h3>Vehicles</h3><p>End-to-end vehicle movement control — from entry authorization to exit clearance for every vehicle type.</p></div>
           </article>
           <article class="gate-pillar-card pillar-contractors">
-            <div class="pillar-icon-wrap"><i>🔧</i><span class="pillar-num">04</span></div>
+            <div class="pillar-icon-wrap"><i class="bi bi-tools" aria-hidden="true"></i><span class="pillar-num">04</span></div>
             <div class="pillar-content"><h3>Contractors &amp; Services</h3><p>Manage service personnel, their equipment, and safe exit — nothing enters or leaves untracked.</p></div>
           </article>
         </div>
@@ -83,7 +84,7 @@
         <div class="vms-dashboard reveal delay-1">
           <aside><b><small>SMART GATE</small></b><span class="active">Dashboard</span><span>Visitor Requests</span><span>Visitor List</span><span>Visitor Pass</span><span>Gate Control</span><span>Reports</span></aside>
           <div class="vms-workspace">
-            <header><b>Dashboard</b><span>Search menus, pages...</span><i>Administrator</i></header>
+            <header><b>Dashboard</b><span>Search menus, pages...</span><em class="admin-user"><i class="bi bi-person-circle" aria-hidden="true"></i>Administrator</em></header>
             <div class="vms-stats"><article><small>Awaiting Approval</small><b>08</b><em>Review</em></article><article><small>Total Visitors</small><b>126</b><em>Today</em></article><article><small>Awaiting Today</small><b>10</b><em>Expected</em></article><article><small>On Premises</small><b>18</b><em>Live</em></article><article><small>Overstayed</small><b>02</b><em>Alert</em></article></div>
             <div class="vms-panels"><article><b>Pending Approvals</b><span>No pending approvals</span></article><article><b>Awaiting Check-In</b><span>Queue is clear</span></article><article><b>Currently On Premises</b><span>18 active visitors</span></article><article><b>Overstayed Visitors</b><span>2 need attention</span></article></div>
           </div>
@@ -110,7 +111,7 @@
             <div class="pass-qr-info">
               <b>Scan to Verify Entry</b>
               <small>VP-3026-00009 &nbsp;·&nbsp; Valid until 06:30 PM</small>
-              <span class="pass-qr-status"><i></i> Verified &amp; Active</span>
+              <span class="pass-qr-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Verified &amp; Active</span>
             </div>
             <div class="pass-qr-gate"><span>Gate</span><b>A-01</b></div>
           </div>
@@ -164,7 +165,7 @@
           <div class="gm-cards-row">
             <div class="gm-card vehicles-theme">
               <div class="gmc-top"><small>Vehicle Entry Record</small><b>VER-2024-00183</b></div>
-              <div class="gmc-vehicle-badge"><span>🚛</span><div><b>TN-01-AB-56**</b><small>Heavy Goods Vehicle</small></div></div>
+              <div class="gmc-vehicle-badge"><span><i class="bi bi-truck" aria-hidden="true"></i></span><div><b>TN-01-AB-56**</b><small>Heavy Goods Vehicle</small></div></div>
               <div class="gmc-body">
                 <div class="gmc-row"><small>Driver</small><b>Su**** Ba**</b></div>
                 <div class="gmc-row"><small>Purpose</small><b>Material Delivery</b></div>
@@ -227,19 +228,19 @@
         <div class="section-heading centered reveal"><div class="eyebrow"><span></span> Role-based workflow</div><h2>Built for Everyone Involved.</h2></div>
         <div class="role-grid">
           <article class="reveal">
-            <i>V</i>
+            <i class="bi bi-person" aria-hidden="true"></i>
             <h3>Visitor</h3>
           </article>
           <article class="reveal delay-1">
-            <i>H</i>
+            <i class="bi bi-person-check" aria-hidden="true"></i>
             <h3>Host</h3>
           </article>
           <article class="reveal delay-2">
-            <i>S</i>
+            <i class="bi bi-shield-lock" aria-hidden="true"></i>
             <h3>Security Team</h3>
           </article>
           <article class="reveal">
-            <i>A</i>
+            <i class="bi bi-speedometer2" aria-hidden="true"></i>
             <h3>Administrator</h3>
           </article>
         </div>
@@ -270,7 +271,7 @@
 
   <footer class="site-footer premium-footer">
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span></a><p>Velantra helps businesses digitize Employee, visitor, gate, and HR operations with secure and scalable management solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="Velentra-logo.png" alt=""></span></a><p>Velantra helps organizations build smarter, more secure, and efficient workplaces through innovative technology and digital transformation solutions.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div></div>
       <div><b>Products</b><a href="smart-id.html">Smart-ID</a><a href="gate-operations.html">Smart-Gate</a><a href="smart-people.html">Smart-People</a></div>
       <div><b>Company</b><a href="about.html">About Us</a><a href="index.html#contact">Contact</a><a href="index.html#faq">Resources</a></div>
       <div><b>Contact</b><a href="https://wa.me/916374326329" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:sales@indsys.com">sales@indsys.com</a></div>

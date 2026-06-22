@@ -84,7 +84,7 @@ body[class] .site-header.home-header .brand-lockup strong sup {
 body[class] .site-header.home-header .brand-lockup small {
   display: block;
   color: #596d8d;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .2em;
   text-transform: uppercase
@@ -176,7 +176,7 @@ body .site-footer.premium-footer .social-links a {
   border-radius: 50%;
   color: #fff;
   background: rgba(255, 255, 255, .08);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 800
 }
 

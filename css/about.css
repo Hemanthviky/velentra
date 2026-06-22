@@ -139,7 +139,7 @@ body.about-page {
   border-radius: 12px;
   color: var(--theme-primary);
   background: rgba(99, 88, 232, 0.12);
-  font: 800 12px "Manrope", sans-serif;
+  font: 800 30px "Manrope", sans-serif;
   font-style: normal;
 }
 
