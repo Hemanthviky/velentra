@@ -1,5 +1,37 @@
 document.querySelectorAll("form").forEach((form) => {
   form.addEventListener("submit", (event) => {
+    const contactMail = form.dataset.contactMail;
+
+    if (contactMail) {
+      event.preventDefault();
+      const button = form.querySelector("button[type='submit']");
+      const original = button?.innerHTML;
+      const formData = new FormData(form);
+      const message = [
+        `Full name: ${formData.get("name") || ""}`,
+        `Work email: ${formData.get("email") || ""}`,
+        `Company: ${formData.get("company") || ""}`,
+        `Product interest: ${formData.get("product") || ""}`,
+        "",
+        "Message:",
+        `${formData.get("message") || ""}`,
+      ].join("\n");
+
+      if (button) {
+        button.innerHTML = "Opening email...";
+        button.disabled = true;
+      }
+
+      window.location.href = `mailto:${contactMail}?subject=${encodeURIComponent("Velentra demo request")}&body=${encodeURIComponent(message)}`;
+
+      setTimeout(() => {
+        if (!button) return;
+        button.innerHTML = original;
+        button.disabled = false;
+      }, 2000);
+      return;
+    }
+
     event.preventDefault();
     const button = form.querySelector("button[type='submit']");
     if (!button) return;

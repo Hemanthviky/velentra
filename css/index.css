@@ -556,6 +556,11 @@
   background: #e9f2ff;
   font: 800 11px "Manrope";
 }
+.smart-id-home-icon {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
 .product-highlight.featured .product-icon {
   color: #fff;
   background: rgba(255, 255, 255, 0.14);

@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --navy: #07162f;
   --navy-2: #0b2147;
   --blue: #135de9;
@@ -161,7 +161,7 @@ a{
 }
 .button-primary{
   color: #fff;
-  background: linear-gradient(135deg, var(--blue), #0645c6);
+  background: radial-gradient(circle at 80% 0%, rgba(99, 88, 232, .25), transparent 35%), #0d0e1c;
   box-shadow: 0 12px 24px rgba(20, 92, 231, .22)
 }
 .button-ghost{

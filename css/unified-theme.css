@@ -130,7 +130,7 @@ body.product-v3 .hero-actions .button-primary,
 body.product-v3 .smart-id-cta-actions .button,
 body.product-v3 .page-cta .button {
   color: #fff;
-  background: linear-gradient(135deg, #7165ee, var(--theme-primary-dark));
+  background: radial-gradient(circle at 80% 0%, rgba(99, 88, 232, .25), transparent 35%), #0d0e1c;
   box-shadow: 0 14px 32px rgba(84, 72, 216, 0.28);
 }
 

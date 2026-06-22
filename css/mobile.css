@@ -1034,6 +1034,143 @@ body :where(.product-highlight, .feature-card, .gate-pillar-card, .solution-feat
   }
 }
 
+/* Mobile card grids become swipe carousels to reduce long vertical stacks. */
+@media (max-width: 700px) {
+  body :where(
+    .product-highlight-grid,
+    .smart-feature-grid,
+    .smart-benefit-grid,
+    .gate-pillars-grid,
+    .gate-trust-grid,
+    .journey-grid,
+    .pass-cards-row,
+    .gm-cards-row,
+    .industry-grid,
+    .vms-stats,
+    .vms-panels,
+    .people-feature-grid,
+    .people-trust-grid,
+    .people-module-grid,
+    .people-why-grid,
+    .coverage-grid,
+    .approach-grid,
+    .why-grid,
+    .solution-grid,
+    .modules-layout,
+    .about-metrics
+  ) {
+    --mobile-card-width: min(82vw, 360px);
+    display: flex !important;
+    grid-template-columns: none !important;
+    gap: 14px !important;
+    align-items: stretch;
+    margin-inline: calc(var(--site-gutter, 16px) * -1);
+    padding: 4px var(--site-gutter, 16px) 16px;
+    overflow-x: auto;
+    overflow-y: visible;
+    overscroll-behavior-inline: contain;
+    scroll-padding-inline: var(--site-gutter, 16px);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body :where(
+    .product-highlight-grid,
+    .smart-feature-grid,
+    .smart-benefit-grid,
+    .gate-pillars-grid,
+    .gate-trust-grid,
+    .journey-grid,
+    .pass-cards-row,
+    .gm-cards-row,
+    .industry-grid,
+    .vms-stats,
+    .vms-panels,
+    .people-feature-grid,
+    .people-trust-grid,
+    .people-module-grid,
+    .people-why-grid,
+    .coverage-grid,
+    .approach-grid,
+    .why-grid,
+    .solution-grid,
+    .modules-layout,
+    .about-metrics
+  )::-webkit-scrollbar {
+    display: none;
+  }
+
+  body :where(
+    .product-highlight-grid,
+    .smart-feature-grid,
+    .smart-benefit-grid,
+    .gate-pillars-grid,
+    .gate-trust-grid,
+    .journey-grid,
+    .pass-cards-row,
+    .gm-cards-row,
+    .industry-grid,
+    .vms-stats,
+    .vms-panels,
+    .people-feature-grid,
+    .people-trust-grid,
+    .people-module-grid,
+    .people-why-grid,
+    .coverage-grid,
+    .approach-grid,
+    .why-grid,
+    .solution-grid,
+    .modules-layout,
+    .about-metrics
+  ) > * {
+    width: var(--mobile-card-width) !important;
+    min-width: var(--mobile-card-width) !important;
+    max-width: var(--mobile-card-width);
+    flex: 0 0 var(--mobile-card-width) !important;
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+
+  body.home-page .product-highlight-grid {
+    --mobile-card-width: calc(100vw - 48px);
+  }
+
+  body.smart-gate-refresh .journey-grid article::after,
+  body.smart-gate-refresh .role-grid::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.home-page .product-highlight-grid,
+  body :where(
+    .smart-feature-grid,
+    .smart-benefit-grid,
+    .gate-pillars-grid,
+    .gate-trust-grid,
+    .journey-grid,
+    .pass-cards-row,
+    .gm-cards-row,
+    .industry-grid,
+    .vms-stats,
+    .vms-panels,
+    .people-feature-grid,
+    .people-trust-grid,
+    .people-module-grid,
+    .people-why-grid,
+    .coverage-grid,
+    .approach-grid,
+    .why-grid,
+    .solution-grid,
+    .modules-layout,
+    .about-metrics
+  ) {
+    --mobile-card-width: calc(100vw - 40px);
+  }
+}
+
 /* Keep the home hero headline as three intentional lines on every screen. */
 body.home-page .platform-copy h1 {
   max-width: none;
