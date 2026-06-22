@@ -389,8 +389,46 @@
   padding: 8px 7px;
 }
 .people-page .people-hero {
+  position: relative;
+  isolation: isolate;
   min-height: auto;
   padding: 125px 0 72px;
+}
+.people-page .people-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 108px;
+  right: 0;
+  bottom: 34px;
+  width: 52vw;
+  border-radius: 38px 0 0 38px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.64) 0%,
+      rgba(251, 251, 255, 0.14) 14%,
+      rgba(17, 18, 34, 0) 100%
+    ),
+    url("../smart-people bg.png") center right / auto 100% no-repeat;
+  box-shadow:
+    inset 44px 0 64px rgba(255, 255, 255, 0.68),
+    inset 0 -42px 54px rgba(244, 243, 250, 0.34),
+    0 30px 78px rgba(29, 25, 61, 0.1);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.86) 9%,
+    #000 18%,
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.86) 9%,
+    #000 18%,
+    #000 100%
+  );
 }
 .people-page .people-hero .inner-hero-grid {
   grid-template-columns: minmax(440px, 0.78fr) minmax(600px, 1.22fr);
@@ -473,10 +511,10 @@
 }
 .people-page .people-visual {
   min-height: 540px;
+  pointer-events: none;
 }
 .people-page .executive-dashboard {
-  width: 100%;
-  transform: none;
+  display: none;
 }
 .executive-kpis {
   grid-template-columns: repeat(5, 1fr);
@@ -1123,12 +1161,15 @@
   .people-page .people-hero .inner-hero-grid {
     grid-template-columns: 1fr;
   }
+  .people-page .people-hero::after {
+    width: 72vw;
+    opacity: 0.36;
+  }
   .people-hero-copy {
     max-width: 800px;
   }
   .people-page .people-visual {
-    width: min(900px, 100%);
-    margin: auto;
+    display: none;
   }
   .people-trust-grid,
   .people-why-grid {
@@ -1170,6 +1211,13 @@
   .people-page .people-hero {
     padding-top: 105px;
   }
+  .people-page .people-hero::after {
+    top: 155px;
+    right: -36%;
+    bottom: 18px;
+    width: 118vw;
+    opacity: 0.2;
+  }
   .people-page .people-hero h1 {
     font-size: clamp(39px, 12vw, 54px);
   }
@@ -1186,8 +1234,7 @@
     width: 100%;
   }
   .people-page .people-visual {
-    min-height: 360px;
-    overflow: hidden;
+    display: none;
   }
   .executive-kpis {
     grid-template-columns: 1fr 1fr;
