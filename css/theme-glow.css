@@ -2293,9 +2293,7 @@ body.home-page{
 .what-orbit-clip .orbit-center{
   width: 142px;
   height: 142px;
-  border: 1px solid rgba(99, 88, 232, .24);
   border-radius: 50%;
-  background: rgba(255, 255, 255, .9);
   box-shadow: 0 22px 48px rgba(99, 88, 232, .18);
 }
 .what-orbit-clip .orbit-center .brand-logo{

@@ -1069,3 +1069,152 @@ body.product-v3 .site-header.home-header .main-nav {
     margin-inline: 0;
   }
 }
+
+/* Navbar sizing and alignment across desktop, tablet, and mobile. */
+body[class] .site-header.home-header,
+body[class] .site-header.home-header.is-scrolled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(12px, 2vw, 32px);
+  padding-inline: clamp(16px, 4vw, 72px);
+}
+
+body[class] .site-header.home-header .brand-lockup {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+body[class] .site-header.home-header .brand-wordmark {
+  width: clamp(168px, 17vw, 280px);
+  max-width: 32vw;
+}
+
+body[class] .site-header.home-header .main-nav {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 4vw, 82px) !important;
+  font-size: clamp(13px, .9vw, 15px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+body[class] .site-header.home-header .main-nav a:not(.button) {
+  padding: 9px clamp(8px, .8vw, 12px);
+}
+
+body[class] .site-header.home-header .main-nav .button {
+  flex: 0 0 auto;
+  padding-inline: clamp(13px, 1.2vw, 18px);
+}
+
+body.home-page .site-header.home-header .main-nav {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+body.product-v3 .site-header.home-header {
+  justify-content: center;
+}
+
+body.product-v3 .site-header.home-header .main-nav {
+  width: auto;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+@media (min-width: 1051px) and (max-width: 1180px) {
+  body[class] .site-header.home-header,
+  body[class] .site-header.home-header.is-scrolled {
+    padding-inline: 28px;
+  }
+
+  body[class] .site-header.home-header .brand-wordmark {
+    width: clamp(150px, 16vw, 210px);
+  }
+
+  body[class] .site-header.home-header .main-nav {
+    gap: clamp(14px, 2vw, 26px) !important;
+    font-size: 13px;
+  }
+
+  body[class] .site-header.home-header .main-nav a:not(.button) {
+    padding-inline: 7px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body[class] .site-header.home-header,
+  body[class] .site-header.home-header.is-scrolled {
+    justify-content: space-between;
+    height: 72px;
+    padding-inline: clamp(16px, 4vw, 28px);
+  }
+
+  body.product-v3 .site-header.home-header,
+  body.product-v3 .site-header.home-header.is-scrolled {
+    justify-content: flex-end;
+  }
+
+  body[class] .site-header.home-header .brand-wordmark {
+    width: clamp(154px, 42vw, 230px);
+    max-width: 58vw;
+  }
+
+  body[class] .site-header.home-header .menu-toggle {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    border-radius: 12px;
+  }
+
+  body[class] .site-header.home-header .main-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: clamp(12px, 3vw, 24px);
+    right: clamp(12px, 3vw, 24px);
+    width: auto;
+    max-height: calc(100svh - 96px);
+    margin: 0;
+    padding: 10px;
+    gap: 4px !important;
+    overflow-y: auto;
+    white-space: normal;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  body[class] .site-header.home-header .main-nav a,
+  body[class] .site-header.home-header .main-nav .button {
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body[class] .site-header.home-header,
+  body[class] .site-header.home-header.is-scrolled {
+    height: 66px;
+    padding-inline: 14px;
+  }
+
+  body[class] .site-header.home-header .brand-wordmark {
+    width: min(54vw, 184px);
+  }
+
+  body[class] .site-header.home-header .menu-toggle {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+}
